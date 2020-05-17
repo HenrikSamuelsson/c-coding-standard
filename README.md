@@ -25,3 +25,35 @@ The ```restrict``` type qualifier shall not be used.
 **Cons:** Burdens the design of the code to guarantee that the memory areas do not overlap.
 
 **Verdict:** The benefit of using ```restrict``` does not outweigh the risk of bugs due to unintentionally failing to meet the needed guarantee.
+
+## Align for loop control variable types
+
+The type of the counter in a for loop shall be of the same type as the variable used for the comparison.
+
+**Rationale:** There is a risk of unintentionally ending up in an infinite loop if mixing variables of different types due to that the types could have different ranges. In the below non-compliant example so will end up in an infinite loop if the parameter called argument is larger than 255.
+
+**Non-compliant example:**  
+
+```c
+void function(uint32_t argument)
+{
+    uint8_t counter;
+    for (counter = 0; counter < argument; counter++)
+    {
+        /* Omitted code. */
+    }
+}
+```
+
+**Compliant example:**  
+
+```c
+void function(uint32_t argument)
+{
+    uint32_t counter;
+    for (counter = 0; counter < argument; counter++)
+    {
+        /* Omitted code. */
+    }
+}
+```
