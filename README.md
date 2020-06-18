@@ -54,7 +54,7 @@ Unreachable code affects the readability negatively and shall hence be removed.
 
 ### Enforcement
 
-Some types of unreachable code can be automatically detected by the compiler or static analyzers. Unreachable code not detected in a automatic way needs to be found during design reviews and code reviews.
+Some types of unreachable code can be automatically detected by the compiler or static analyzers. Automated code coverage tests can also serve as hint that code might be unreachable. Unreachable code not detected in a automatic way needs to be found during code review.
 
 ### Notes
 
