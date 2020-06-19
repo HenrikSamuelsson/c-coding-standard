@@ -27,7 +27,7 @@ There are various reasons for existence of unreachable code, it can be due to fl
 ### Noncompliant Example
 
 ```c
-uint32_t TripleUp(uint32_t number)
+uint32_t tripleUp(uint32_t number)
 {
     uint32_t result = 3 * number;
 
@@ -41,7 +41,7 @@ uint32_t TripleUp(uint32_t number)
 ### Compliant Example
 
 ```c
-uint32_t TripleUp(uint32_t number)
+uint32_t tripleUp(uint32_t number)
 {
     uint32_t result = 3 * number;
     return result;
