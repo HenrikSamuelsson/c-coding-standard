@@ -6,7 +6,7 @@ No dead code in the production version.
 
 The definition of dead code in this context is; code that is executed but do not affect the program result.
 
-Dead code can be anything that is not used, such as a variable, function, or parameter. Whole blocks of code can also be dead code if it does not do anything useful. Sections of commented out code also count as dead code.
+Dead code can be anything that is not used, such as a variable, function, type declaration, or parameter. Statements and whole blocks of code can also be dead code if it does not do anything useful. Sections of commented out code also count as dead code.
 
 ## Noncompliant Example
 
