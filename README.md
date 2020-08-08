@@ -1,4 +1,4 @@
-e# C Coding Standard
+# C Coding Standard
 
 C programming coding standard, according to ShinyGreenRobot.
 

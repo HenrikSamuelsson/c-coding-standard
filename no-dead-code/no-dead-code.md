@@ -39,7 +39,7 @@ uint32_t blockVolume(uint32_t height, uint32_t width, uint32_t depth)
 
 ## Exceptions
 
-Modules that are intended to be reused as libraries in other projects are a allowed the include functions and types not used in the current project.
+Modules that are intended to be reused as libraries in other projects are allowed to include functions and types not used in the current project.
 
 ## Rationale
 
@@ -47,4 +47,4 @@ Dead code affects the readability negatively and might cause the software to con
 
 ## Enforcement
 
-The compiler can detect some dead code and shall be setup to report occurrences of dead code. Static analyzers can also be used to detect dead code. Dead code can also be detected during code review and shall be removed before incorporating the code into the production code base.
+The compiler can detect some dead code and shall be setup to report occurrences of dead code, static analyzers can additionally be used to detect dead code, and dead code can be detected during code review.
