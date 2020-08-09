@@ -1,21 +1,116 @@
 \documentclass{article}
-\usepackage{listings}       % For displaying source code.
-\usepackage{inconsolata}    % To enable usage of font that mimics Consolas font.          
 
+\usepackage{booktabs}       % For more professional looking tables.
+\usepackage{listings}       % For displaying source code.
+\usepackage{inconsolata}    % To enable usage of font that mimics Consolas font.
+\usepackage{tabularx}  
+
+% Import the
 \lstset{
   basicstyle=\ttfamily,     % Change to mono spaced font for source code. 
   tabsize=4,                % Reduce the tab size.
-  language=C                % Set C as programming language
+  language=C                % Set C as programming language.
 }
-
 
 \begin{document}
 
-\begin{lstlisting}[frame=single]
-int main(void)
+\section{Introduction}
+
+\subsection{Terms and Definitions}
+
+A quick reference with explanations of terms used in this document is provided in Table \ref{tab:terms-and-defs}. Note that the definitions are often C programming language specific and might not be true in other contexts. 
+
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{lX}
+\toprule
+Term & Definition \\
+\midrule
+allocated storage duration & Object with dynamic storage duration, the storage is created and destroyed upon request. \\
+automatic	storage duration &	Object with storage duration inside a block only, from the point of declaration to the end of the block. \\
+block & A range of statements enclosed between a pair of braces. \\
+object & A location in memory whose content can represent values. \\
+static storage duration & Object with storage duration from start to end of program execution. \\ 
+storage duration & Determines an objects lifetime. There are three storage durations; allocated, auto, and static. \\
+storage class specifier & Specifies storage duration and linkage of objects. There are five specifiers; auto, extern, register, static, and \_Thread\_local. \\
+\bottomrule
+\end{tabularx}
+\caption{Term and definition quick reference}
+\label{tab:terms-and-defs}
+\end{table}
+
+\section{Rules}
+
+\subsection{Initialize Automatic Variables}
+
+Variables with automatic storage duration shall be initialized before use.
+
+\begin{minipage}{.48\textwidth}
+\begin{lstlisting}
+int foo(void)
 {
-	return 0;
+	uint32_t i;
+	i++;
+	return i;
 }
 \end{lstlisting}
+\end{minipage}
+
+\begin{minipage}{.48\textwidth}
+\begin{lstlisting}
+int foo(void)
+{
+	uint32_t i;
+	i++;
+	return i;
+}
+\end{lstlisting}
+\end{minipage}
+
+
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\lstset{language=C,label=SliceExaple}
+\begin{lstlisting}[frame=single, numbers=left, mathescape,%
+   caption={Example WHILE code snippet with nested scopes.}, label=scopingExample]
+x:=1;
+if(x>0)
+{
+x:=5;
+while(x>0)
+{
+   x:=x-1;
+}
+x:=10;
+}
+else
+{
+write x;
+}
+x:=15;
+\end{lstlisting}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.45\linewidth}
+\centering
+\begin{lstlisting}[frame=single, mathescape,%
+   title={Contents of scopesEntered for each block.}, label=scopesEnteredContents]
+[0]
+[0]
+ 
+[1;0]
+[1;0]
+ 
+[2;1;0]
+ 
+[1;0]
+ 
+ 
+ 
+[3;0]
+ 
+[0]
+\end{lstlisting}
+\end{minipage}
+
 
 \end{document}
