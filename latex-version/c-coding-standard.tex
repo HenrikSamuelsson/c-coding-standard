@@ -41,11 +41,11 @@ storage class specifier & Specifies storage duration and linkage of objects. The
 \section{Rules}
 
 \subsection{Initialize Automatic Variables}
-
-Variables with automatic storage duration shall be initialized before use.
-
-\begin{minipage}{.48\textwidth}
-\begin{lstlisting}
+Variables with automatic storage duration shall be initialized before use.\\
+\subsubsection{Reasoning}
+The value of an automatic variable that is not initialized is undefined. Explicit initialization shall hence be done before using the variable, either when declaring the variable or just before the variable is used for the first time.
+\begin{minipage}[t]{0.47\linewidth}
+\begin{lstlisting}[frame=single, title={Non-compliant}]
 int foo(void)
 {
 	uint32_t i;
@@ -53,62 +53,16 @@ int foo(void)
 	return i;
 }
 \end{lstlisting}
-\end{minipage}
-
-\begin{minipage}{.48\textwidth}
-\begin{lstlisting}
+\end{minipage}%
+\hfill%
+\begin{minipage}[t]{0.47\linewidth}
+\begin{lstlisting}[frame=single, title={Compliant}]
 int foo(void)
 {
-	uint32_t i;
+	uint32_t i = 0;
 	i++;
 	return i;
 }
-\end{lstlisting}
-\end{minipage}
-
-
-\begin{minipage}[b]{0.45\linewidth}
-\centering
-\lstset{language=C,label=SliceExaple}
-\begin{lstlisting}[frame=single, numbers=left, mathescape,%
-   caption={Example WHILE code snippet with nested scopes.}, label=scopingExample]
-x:=1;
-if(x>0)
-{
-x:=5;
-while(x>0)
-{
-   x:=x-1;
-}
-x:=10;
-}
-else
-{
-write x;
-}
-x:=15;
-\end{lstlisting}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}[b]{0.45\linewidth}
-\centering
-\begin{lstlisting}[frame=single, mathescape,%
-   title={Contents of scopesEntered for each block.}, label=scopesEnteredContents]
-[0]
-[0]
- 
-[1;0]
-[1;0]
- 
-[2;1;0]
- 
-[1;0]
- 
- 
- 
-[3;0]
- 
-[0]
 \end{lstlisting}
 \end{minipage}
 
