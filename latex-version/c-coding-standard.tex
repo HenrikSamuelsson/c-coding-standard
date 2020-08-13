@@ -28,10 +28,14 @@ Term & Definition \\
 allocated storage duration & Object with dynamic storage duration, the storage is created and destroyed upon request. \\
 automatic	storage duration &	Object with storage duration inside a block only, from the point of declaration to the end of the block. \\
 block & A range of statements enclosed between a pair of braces. \\
+declaration & TODO \\
 object & A location in memory whose content can represent values. \\
+statement & TODO \\
 static storage duration & Object with storage duration from start to end of program execution. \\ 
 storage duration & Determines an objects lifetime. There are three storage durations; allocated, auto, and static. \\
 storage class specifier & Specifies storage duration and linkage of objects. There are five specifiers; auto, extern, register, static, and \_Thread\_local. \\
+type & TODO \\
+type qualifier & Adds attributes to types at the point of declaration. There are four type qualifiers; const, restrict, volatile, and \_Atomic. \\
 \bottomrule
 \end{tabularx}
 \caption{Term and definition quick reference}
@@ -40,9 +44,10 @@ storage class specifier & Specifies storage duration and linkage of objects. The
 
 \section{Rules}
 
-\subsection{Initialize Automatic Variables}
 Variables with automatic storage duration shall be initialized before use.\\
+
 \subsubsection{Reasoning}
+
 The value of an automatic variable that is not initialized is undefined. Explicit initialization shall hence be done before using the variable, either when declaring the variable or just before the variable is used for the first time.
 \begin{minipage}[t]{0.47\linewidth}
 \begin{lstlisting}[frame=single, title={Non-compliant}]
@@ -53,8 +58,8 @@ int foo(void)
 	return i;
 }
 \end{lstlisting}
-\end{minipage}%
-\hfill%
+\end{minipage}
+\hfill
 \begin{minipage}[t]{0.47\linewidth}
 \begin{lstlisting}[frame=single, title={Compliant}]
 int foo(void)
@@ -65,6 +70,10 @@ int foo(void)
 }
 \end{lstlisting}
 \end{minipage}
+
+\subsection{Initialize Constant Variables When Declared}
+
+Declaration of variables with const type qualifier shall include initialization. 
 
 
 \end{document}
