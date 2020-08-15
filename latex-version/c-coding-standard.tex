@@ -28,13 +28,14 @@ Term & Definition \\
 allocated storage duration & Object with dynamic storage duration, the storage is created and destroyed upon request. \\
 automatic	storage duration &	Object with storage duration inside a block only, from the point of declaration to the end of the block. \\
 block & A range of statements enclosed between a pair of braces. \\
-declaration & TODO \\
-object & A location in memory whose content can represent values. \\
-statement & TODO \\
-static storage duration & Object with storage duration from start to end of program execution. \\ 
+declaration & Statement that introduces an identifier and its type. \\
+identifier & A name given to an entity such as variables, functions, structures etc. \\
+object & A location in memory whose content represent a value. \\
+statement & Instruction to a computer, in C typically a single line expression followed by a semicolon. \\
+static storage duration & Storage duration from start to end of program execution. \\ 
 storage duration & Determines an objects lifetime. There are three storage durations; allocated, auto, and static. \\
 storage class specifier & Specifies storage duration and linkage of objects. There are five specifiers; auto, extern, register, static, and \_Thread\_local. \\
-type & TODO \\
+type & Variable classification such as; int, char, and double, that determines storage size and how the bit pattern stored shall be interpreted.\\
 type qualifier & Adds attributes to types at the point of declaration. There are four type qualifiers; const, restrict, volatile, and \_Atomic. \\
 \bottomrule
 \end{tabularx}
@@ -43,6 +44,8 @@ type qualifier & Adds attributes to types at the point of declaration. There are
 \end{table}
 
 \section{Rules}
+
+\subsection{Initialize Automatic Variables}
 
 Variables with automatic storage duration shall be initialized before use.\\
 
@@ -75,5 +78,12 @@ int foo(void)
 
 Declaration of variables with const type qualifier shall include initialization. 
 
+\subsection{Strict Enumeration Initialization}
+
+Strategy used for initialization of the members in an enum type shall be one of the following: not specifying any values, specifying all values, specifying only the first value.
+
+\subsubsection{Reasoning}
+
+All allowed strategies minimizes the risk that a pair of members is assigned the same value by mistake. 
 
 \end{document}
