@@ -9,7 +9,8 @@
 \lstset{
   basicstyle=\ttfamily,     % Change to mono spaced font for source code. 
   tabsize=4,                % Reduce the tab size.
-  language=C                % Set C as programming language.
+  language=C,               % Set C as programming language.
+  frame=single              % Put a frame around the source code listings.	
 }
 
 \begin{document}
@@ -29,13 +30,13 @@ allocated storage duration & Object with dynamic storage duration, the storage i
 automatic	storage duration &	Object with storage duration inside a block only, from the point of declaration to the end of the block. \\
 block & A range of statements enclosed between a pair of braces. \\
 declaration & Statement that introduces an identifier and its type. \\
-identifier & A name given to an entity such as variables, functions, structures etc. \\
+identifier & A name given to an entity such as variables, functions, structures, et cetera. \\
 object & A location in memory whose content represent a value. \\
 statement & Instruction to a computer, in C typically a single line expression followed by a semicolon. \\
 static storage duration & Storage duration from start to end of program execution. \\ 
 storage duration & Determines an objects lifetime. There are three storage durations; allocated, auto, and static. \\
 storage class specifier & Specifies storage duration and linkage of objects. There are five specifiers; auto, extern, register, static, and \_Thread\_local. \\
-type & Variable classification such as; int, char, and double, that determines storage size and how the bit pattern stored shall be interpreted.\\
+type & Variable classification such as; int, char, double, et cetera, that determines storage size and how the bit pattern stored shall be interpreted.\\
 type qualifier & Adds attributes to types at the point of declaration. There are four type qualifiers; const, restrict, volatile, and \_Atomic. \\
 \bottomrule
 \end{tabularx}
@@ -53,7 +54,7 @@ Variables with automatic storage duration shall be initialized before use.\\
 
 The value of an automatic variable that is not initialized is undefined. Explicit initialization shall hence be done before using the variable, either when declaring the variable or just before the variable is used for the first time.
 \begin{minipage}[t]{0.47\linewidth}
-\begin{lstlisting}[frame=single, title={Non-compliant}]
+\begin{lstlisting}[frame=single, title={Non-Compliant}]
 int foo(void)
 {
 	uint32_t i;
@@ -64,7 +65,7 @@ int foo(void)
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.47\linewidth}
-\begin{lstlisting}[frame=single, title={Compliant}]
+\begin{lstlisting}[title={Compliant}]
 int foo(void)
 {
 	uint32_t i = 0;
@@ -84,6 +85,14 @@ Strategy used for initialization of the members in an enum type shall be one of 
 
 \subsubsection{Reasoning}
 
-All allowed strategies minimizes the risk that a pair of members is assigned the same value by mistake. 
+Minimizes the risk that a pair of members is assigned the same value by mistake.
+\begin{minipage}[t]{0.47\linewidth}
+\lstinputlisting[firstline=25, lastline=30, title={Non-Compliant}]{../code/main.c}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\lstinputlisting[firstline=4, lastline=23, title={Compliant}]{../code/main.c}
+\end{minipage}
+ 
 
 \end{document}
