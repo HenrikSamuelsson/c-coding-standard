@@ -29,6 +29,22 @@ enum nonCompliantEnum
     NC_E3 = 2
 };
 
+void f(int *a,
+       int *b,
+       int *x)
+{
+  *a += *x;
+  *b += *x;
+}
+
+void f(int *restrict a,
+       int *restrict b,
+       int *restrict x)
+{
+  *a += *x;
+  *b += *x;
+}
+
 int main(void)
 {
     printf("Hello world!");

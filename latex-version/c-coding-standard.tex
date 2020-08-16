@@ -3,14 +3,13 @@
 \usepackage{booktabs}       % For more professional looking tables.
 \usepackage{listings}       % For displaying source code.
 \usepackage{inconsolata}    % To enable usage of font that mimics Consolas font.
-\usepackage{tabularx}  
+\usepackage{tabularx}
 
-% Import the
 \lstset{
-  basicstyle=\ttfamily,     % Change to mono spaced font for source code. 
+  basicstyle=\ttfamily,     % Change to mono spaced font for source code.
   tabsize=4,                % Reduce the tab size.
   language=C,               % Set C as programming language.
-  frame=single              % Put a frame around the source code listings.	
+  frame=single              % Put a frame around the source code listings.
 }
 
 \begin{document}
@@ -19,7 +18,7 @@
 
 \subsection{Terms and Definitions}
 
-A quick reference with explanations of terms used in this document is provided in Table \ref{tab:terms-and-defs}. Note that the definitions are often C programming language specific and might not be true in other contexts. 
+A quick reference with explanations of terms used in this document is provided in Table \ref{tab:terms-and-defs}. Note that the definitions are often C programming language specific and might not be true in other contexts.
 
 \begin{table}[h]
 \begin{tabularx}{\textwidth}{lX}
@@ -33,7 +32,7 @@ declaration & Statement that introduces an identifier and its type. \\
 identifier & A name given to an entity such as variables, functions, structures, et cetera. \\
 object & A location in memory whose content represent a value. \\
 statement & Instruction to a computer, in C typically a single line expression followed by a semicolon. \\
-static storage duration & Storage duration from start to end of program execution. \\ 
+static storage duration & Storage duration from start to end of program execution. \\
 storage duration & Determines an objects lifetime. There are three storage durations; allocated, auto, and static. \\
 storage class specifier & Specifies storage duration and linkage of objects. There are five specifiers; auto, extern, register, static, and \_Thread\_local. \\
 type & Variable classification such as; int, char, double, et cetera, that determines storage size and how the bit pattern stored shall be interpreted.\\
@@ -48,7 +47,7 @@ type qualifier & Adds attributes to types at the point of declaration. There are
 
 \subsection{Initialize Automatic Variables}
 
-Variables with automatic storage duration shall be initialized before use.\\
+Variables with automatic storage duration shall be initialized before use.
 
 \subsubsection{Reasoning}
 
@@ -77,7 +76,7 @@ int foo(void)
 
 \subsection{Initialize Constant Variables When Declared}
 
-Declaration of variables with const type qualifier shall include initialization. 
+Declaration of variables with const type qualifier shall include initialization.
 
 \subsection{Strict Enumeration Initialization}
 
@@ -93,6 +92,31 @@ Minimizes the risk that a pair of members is assigned the same value by mistake.
 \begin{minipage}[t]{0.47\linewidth}
 \lstinputlisting[firstline=4, lastline=23, title={Compliant}]{../code/main.c}
 \end{minipage}
- 
+
+\subsection{No Usage of Restrict}
+
+Do not use the restrict type qualifier.
+
+\subsubsection{Reasoning}
+
+The keyword restrict is type qualifier that can be added in a object pointer declaration. It provides a hint to the compiler that only this pointer will be used access the object. This will in some situations make it possible for the compiler to generate a more optimized result. The behavior of the code will be undefined if this guarantee is not meet. Using restrict burdens the design of the code to guarantee that the memory areas do not overlap and adds a risk, the restrict type qualifier shall hence not be used.
+
+\subsubsection{Examples}
+
+\begin{minipage}[t]{0.47\linewidth}
+\lstinputlisting[firstline=40, lastline=46, title={Non-Compliant}]{../code/main.c}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\lstinputlisting[firstline=32, lastline=38, title={Compliant}]{../code/main.c}
+\end{minipage}
+
+\subsection{Use Unsigned Type For Bit Manipulation}
+
+Operands of bitwise operation shall be of unsigned integer type.
+
+\subsubsection{Reasoning}
+
+The result of bitwise operations on signed integers are implementation-defined.
 
 \end{document}
