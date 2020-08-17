@@ -60,18 +60,6 @@ Some types of unreachable code can be automatically detected by the compiler or 
 
 TODO Add notes on exception to the rule for error handling.
 
-## Restrict usage
-
-The ```restrict``` type qualifier shall not be used.
-
-**Info:** The keyword ```restrict``` is type qualifier that since C99 be used in object pointer declarations. It provides a hint to the compiler that only this pointer will be used access the object. This will in some situations make it possible for the compiler to generate a more optimized result. The behavior of the code will be undefined if this guarantee is not meet.
-
-**Pros:** Possibly a more optimized resulting binary file.
-
-**Cons:** Burdens the design of the code to guarantee that the memory areas do not overlap.
-
-**Verdict:** The benefit of using ```restrict``` does not outweigh the risk of bugs due to unintentionally failing to meet the needed guarantee.
-
 ## Align for loop control variable types
 
 The type of the counter in a for loop shall be of the same type as the variable used for the comparison.

@@ -37,7 +37,7 @@ void f(int *a,
   *b += *x;
 }
 
-void f(int *restrict a,
+void g(int *restrict a,
        int *restrict b,
        int *restrict x)
 {
@@ -45,8 +45,18 @@ void f(int *restrict a,
   *b += *x;
 }
 
+void h(char *);
+
 int main(void)
 {
-    printf("Hello world!");
+    printf("Hello world!\n");
+
+    const char *str = "hello";
+    h((char *) str);
     return EXIT_SUCCESS;
+}
+
+void h(char * c)
+{
+    printf("%c", *c);
 }
