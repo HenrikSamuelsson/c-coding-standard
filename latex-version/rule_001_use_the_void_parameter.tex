@@ -1,0 +1,10 @@
+\subsection{Use the void Function Parameter}
+
+A function that does not take any parameters shall use the void type parameter in the declaration.
+
+\subsubsection{Reasoning}
+
+A C function declaration with an empty parameter list is not the same as that the function has no parameters, it is an obsolete way to declare a function without needing to explicitly specify the number, and types of parameters. Using void explicitly states that function does not takes any parameters, making it possible for the compiler to check for conflicts in function usage.
+
+\subsubsection{Examples}
+
