@@ -1,10 +1,17 @@
 \subsection{Use the void Function Parameter}
 
-A function that does not take any parameters shall use the void type parameter in the declaration.
+The declaration of a function that does not take any parameters shall use the void type parameter.
 
 \subsubsection{Reasoning}
 
-A C function declaration with an empty parameter list is not the same as that the function has no parameters, it is an obsolete way to declare a function without needing to explicitly specify the number, and types of parameters. Using void explicitly states that function does not takes any parameters, making it possible for the compiler to check for conflicts in function usage.
+A C function declaration with an empty parameter list is not the same as that the function has no parameters, it is an obsolete way to declare a function without needing to explicitly specify the number, and types of parameters. Using void explicitly, states that a function does not takes any parameters, making it possible for the compiler to check for conflicts in the function usage.
 
 \subsubsection{Examples}
 
+\begin{minipage}[t]{0.47\linewidth}
+\lstinputlisting[firstline=40, lastline=46, title={Non-Compliant}]{../code/main.c}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\linewidth}
+\lstinputlisting[firstline=32, lastline=38, title={Compliant}]{../code/main.c}
+\end{minipage}
