@@ -1,23 +1,15 @@
 #include <stdio.h>
 
-void g();
 void f(void);
 
 int main(void)
 {
-    g(1, 2);
-    f();
-
+    f();    /* Compiler would detect if any parameters were provided here by mistake. */
     return 0;
 }
 
-void g(int i, int j)
-{
-    printf("%d %d", i, j);
-    printf("\n");
-}
 
 void f(void)
 {
-    printf("Invoking f with void type parameter");
+    printf("Invoking f with void type parameter.\n");
 }
