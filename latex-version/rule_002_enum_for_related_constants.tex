@@ -1,0 +1,14 @@
+\subsection{Related Constants Definition}
+
+Us an enum to define related constants.
+
+\subsection{Examples}
+
+TODO Add code examples.
+TODO Check if GCC spots the problem in the non-compliant code example.
+
+\subsubsection{Reasoning}
+
+Defining related constants as enum type, as opposed to a group of preprocessor defines, makes it possible to automate checks for errors where the constant is used in the wrong context.
+
+Also so will eventual debugging be simplified due to that there will for sure be a symbol for each enum constant in the debugger symbol table.
