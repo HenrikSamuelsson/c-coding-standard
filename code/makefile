@@ -1,4 +1,7 @@
-all: main_program rule_001_compliant rule_001_non_compliant
+all: main_program \
+ rule_001_compliant \
+ rule_001_non_compliant \
+ rule_002_compliant
 
 main_program: main.c
 	gcc -o main_program main.c -std=c99 -Wall -pedantic
@@ -8,3 +11,6 @@ rule_001_compliant: rule_001_compliant.c
 
 rule_001_non_compliant: rule_001_non_compliant.c
 	gcc -o rule_001_non_compliant rule_001_non_compliant.c -std=c99 -Wall -pedantic
+
+rule_002_compliant: rule_002_compliant.c
+	gcc -o rule_002_compliant rule_002_compliant.c -std=c99 -Wall -pedantic -Wconversion
