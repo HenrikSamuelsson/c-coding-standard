@@ -2,8 +2,8 @@
 
 \usepackage{booktabs}       % For more professional looking tables.
 \usepackage{listings}       % For displaying source code.
-\usepackage{inconsolata}    % To enable usage of font that mimics Consolas font.
-\usepackage{tabularx}
+\usepackage{inconsolata}    % Enables usage of font that mimics Consolas font.
+\usepackage{tabularx}       % Enables stretching table column width to fit page.
 
 \lstset{
   basicstyle=\ttfamily,     % Change to mono spaced font for source code.
@@ -11,6 +11,9 @@
   language=C,               % Set C as programming language.
   frame=single              % Put a frame around the source code listings.
 }
+
+\newcounter{Rule}[section]
+\newcommand\myRule{\stepcounter{Rule}Rule \theRule}
 
 \begin{document}
 
@@ -121,10 +124,9 @@ The result of bitwise operations on signed integers are implementation-defined.
 
 \subsection{Preserve Type Qualifications for Pointers}
 
-Do not make a cast that removes const or volatile type qualification from an object addressed by a pointer.
+
 
 \input{rule_001_use_the_void_parameter.tex}
-
 \input{rule_002_enum_for_related_constants.tex}
 
 \end{document}
