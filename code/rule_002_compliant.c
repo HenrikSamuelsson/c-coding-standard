@@ -20,6 +20,7 @@ int f(direction d);
 
 int main(void)
 {
+	f(NORTH);
 	compassBearing cB = UP;
 	if (cB == UP)
 	{
