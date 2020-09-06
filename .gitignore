@@ -52,3 +52,12 @@ Mkfile.old
 dkms.conf
 ka-version
 resources
+
+# Files Created by Latex
+*.aux
+*.bbl
+*.blg
+*.log
+*.fbd_latexmk
+*.fls
+*.synctex.gz
