@@ -61,3 +61,6 @@ resources
 *.fbd_latexmk
 *.fls
 *.synctex.gz
+
+# Visual Stodio Code
+.metadata
