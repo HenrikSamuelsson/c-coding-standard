@@ -12,6 +12,6 @@ Use enum to define related constants.
     \lstinputlisting[firstline=11, lastline=17, title={Compliant}]{../code/rule_002_compliant.c}
 \end{minipage}
 
-\subsubsection{Reasoning}
+\subsubsection*{Reasoning}
 
 Defining related constants as enum type, as opposed to a group of preprocessor defines comes with various benefits. Makes it possible to automate have automated error checks for where the constant is used in the wrong context. Simplifies debugging due to that there will be a symbol for each enum constant in the debugger symbol table.
