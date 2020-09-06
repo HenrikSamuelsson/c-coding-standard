@@ -1,1 +1,5 @@
+# For some reason so will we need to ignore this file also directly in the sub folder
 *.fdb_latexmk
+
+# Not known what is the purpose of this file seems unlikely that we need to have it in git
+__latexindent_temp.tex
