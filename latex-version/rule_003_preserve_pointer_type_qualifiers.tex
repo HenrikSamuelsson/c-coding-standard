@@ -1,0 +1,27 @@
+\subsection*{\myRule{}}
+
+Ensure that pointer cast preserves the type qualifiers of the type addressed by the pointer.
+
+\subsubsection*{Examples}
+
+TODO fix code expamples.
+
+\begin{minipage}[t]{0.47\linewidth}
+    \lstinputlisting[
+        firstline=3,
+        lastline=3,
+        title={Non-Compliant}
+        ]{../code/rule_001_non_compliant.c}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\linewidth}
+    \lstinputlisting[
+        firstline=3,
+        lastline=3,
+        title={Compliant}
+        ]{../code/rule_001_compliant.c}
+\end{minipage}
+
+\subsubsection*{Reasoning}
+
+Casting away const and volatile memory area qualifications is not illegal but adds some risks. The compiler will not be able to check and detect erroneous handling of the memory area. The compiler might also perform unintended optimization.
