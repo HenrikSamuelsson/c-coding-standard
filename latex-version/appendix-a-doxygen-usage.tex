@@ -2,4 +2,14 @@
 
 \subsection*{Introduction}
 
-Doxygen is a tool that generates documentation from annotated source files. A module can, using Doxygen, be documented directly when developing the code for the module. This workflow makes it more likely that the documentation is kept consistent with the source code.
+Doxygen is a tool that generates documentation from annotated source files. A software module can be documented directly when developing the code for the module. This workflow makes it more likely that the documentation is kept consistent with the source code.
+
+The documentation can be generated into various formats depending on the needs of the project process. Examples of supported formats are PDF, HTML, RTF, and \LaTeX{}.
+
+Doxygen is commonly used to document modules and functions intended usage in a textual format. But is also possible to generate various visual representations of the elements in the form of graphs and diagrams. These can be used learn the structure of a project or to verify that the implementation is consistent with the design.
+
+The annotations added to the source code are mostly straightforward and human readable. It is possible for developers to digest the documentation directly in the raw source code without need to run the generation process.
+
+\subsection*{Source Code Annotation Rules}
+
+The Doxygen specific annotations are created by incorporating special kind of comment blocks into the source files. These comment blocks can be written in several different ways and still be accepted by Doxygen. This section specifies a set of rules for how the write the comment blocks. The purpose of the rules is; to have consistency, not miss out on required documentation, trouble free coexistence with other tools.
