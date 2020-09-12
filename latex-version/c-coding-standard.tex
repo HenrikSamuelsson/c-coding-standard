@@ -12,8 +12,14 @@
   frame=single              % Put a frame around the source code listings.
 }
 
-\newcounter{Rule}[section]
+% Counter for the coding rules.
+% TODO rename to myRule to something more appropriate.
+\newcounter{Rule}
 \newcommand\myRule{\stepcounter{Rule}Rule \theRule}
+
+% Counter for the rules related to Doxygen.
+\newcounter{DoxygenRule}
+\newcommand\doxygenRule{\stepcounter{DoxygenRule}Doxygen Rule \theDoxygenRule}
 
 \begin{document}
 
