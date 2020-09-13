@@ -1,6 +1,6 @@
 \subsection*{\doxygenRule{}}
 
-All doxygen comment blocks shall include the /brief command. The text for this command shall be a short preferably one-line description capturing essential functionality. The command shall be followed by an empty line.
+A doxygen comment block used for documenting a function shall include the /brief command. The text for this command shall be a short, preferably one-line, description capturing the core functionality. The command shall be followed by an empty line.
 
 \subsubsection*{Examples}
 
@@ -8,38 +8,19 @@ All doxygen comment blocks shall include the /brief command. The text for this c
 \begin{minipage}[t]{0.47\textwidth}
     \lstinputlisting[
         xleftmargin=3.4pt,
-        firstline=11,
-        lastline=13,
+        firstline=6,
+        lastline=16,
         title={Non-Compliant}
-    ]{../code/doxy-rule-001.c}
+    ]{../code/doxy-rule-002-non-compliant.c}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.47\textwidth}
     \lstinputlisting[
-        firstline=5,
-        lastline=7,
+        firstline=6,
+        lastline=16,
         title={Compliant}
-    ]{../code/doxy-rule-001.c}
+    ]{../code/doxy-rule-002-compliant.c}
 \end{minipage}
-
-\noindent
-\begin{minipage}[t]{0.47\textwidth}
-    \lstinputlisting[
-        xleftmargin=3.4pt,
-        firstline=15,
-        lastline=17,
-        title={Non-Compliant}
-    ]{../code/doxy-rule-001.c}
-\end{minipage}\hfill
-
-\noindent
-\begin{minipage}[t]{0.47\textwidth}
-    \lstinputlisting[
-        xleftmargin=3.4pt,
-        firstline=19,
-        lastline=21,
-        title={Non-Compliant}
-    ]{../code/doxy-rule-001.c}
-\end{minipage}\hfill
 
 \subsubsection*{Reasoning}
 
+ Most functions worthy of a Doxygen comment block deserve at least one line of documentation, describing its functionality and purpose. The /brief command is meant to be used for this type of short, concise, documentation. An empty line following the /brief command is by Doxygen interpreted as a new paragraph. More detailed description can optionally be inserted after the empty line.
