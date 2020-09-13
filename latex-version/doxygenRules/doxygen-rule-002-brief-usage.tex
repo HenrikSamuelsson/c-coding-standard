@@ -1,6 +1,6 @@
 \subsection*{\doxygenRule{}}
 
-Mark Doxygen comment blocks as a C-style comment block, with the difference that there shall be two initial asterisks.
+All doxygen comment blocks shall include the /brief command. The text for this command shall be a short preferably one-line description capturing essential functionality. The command shall be followed by an empty line.
 
 \subsubsection*{Examples}
 
@@ -43,6 +43,3 @@ Mark Doxygen comment blocks as a C-style comment block, with the difference that
 
 \subsubsection*{Reasoning}
 
-Doxygen supports multiple different formats for the comments block that is the base for the documentation generation. A single format shall be used in a project to improve source code readability. What format to use is somewhat arbitrary.
-
-The format specified by this rule is chosen due to that it closely resembles ordinary C comment blocks. Many editors will understand that this is a Doxygen comment block and highlight the block accordingly, and it is also understood and formatted correctly by many automatic source code formatting tools.
