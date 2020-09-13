@@ -16,7 +16,11 @@
 ///
 ///
 
-int main (void)
+//!
+//!
+//!
+
+int main(void)
 {
     printf("Doxygen rule 001");
 }
