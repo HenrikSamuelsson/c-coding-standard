@@ -1,26 +1,27 @@
 \subsection*{\doxygenRule{}}
 
-A doxygen comment block used for documenting a function shall include the /brief command. The text for this command shall be a short, preferably one-line, description capturing the core functionality. The command shall be followed by an empty line.
+A doxygen comment block used for documenting a function shall include the \textbackslash brief command. The text for this command shall be a short, preferably one-line, description capturing the core functionality. The command shall be followed by an empty line.
 
 \subsubsection*{Examples}
 
 \noindent
 \begin{minipage}[t]{0.47\textwidth}
     \lstinputlisting[
-        xleftmargin=3.4pt,
-        firstline=6,
-        lastline=16,
-        title={Non-Compliant}
+        xleftmargin = 3.4pt,
+        firstline = 6,
+        lastline = 11,
+        title = {Non-Compliant}
     ]{../code/doxy-rule-002-non-compliant.c}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.47\textwidth}
     \lstinputlisting[
-        firstline=6,
-        lastline=16,
-        title={Compliant}
+        xrightmargin = 3.4pt,
+        firstline = 6,
+        lastline = 12,
+        title = {Compliant}
     ]{../code/doxy-rule-002-compliant.c}
 \end{minipage}
 
 \subsubsection*{Reasoning}
 
- Most functions worthy of a Doxygen comment block deserve at least one line of documentation, describing its functionality and purpose. The /brief command is meant to be used for this type of short, concise, documentation. An empty line following the /brief command is by Doxygen interpreted as a new paragraph. More detailed description can optionally be inserted after the empty line.
+ Most functions worthy of a Doxygen comment block deserve at least one line of documentation describing functionality and purpose. The \textbackslash brief command is meant to be used for this type of short, concise, documentation. An empty line following the \textbackslash brief command is by Doxygen interpreted as a new paragraph. More detailed description can optionally be inserted after the empty line.
