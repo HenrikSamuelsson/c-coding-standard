@@ -1,6 +1,6 @@
 \subsection*{\doxygenRule{}}
 
-A doxygen comment block used for documenting a function can in addition to the  \textbackslash brief section have one or more sections with more detailed description of the functionality. Each section of this type be shall annotated with the \textbackslash details command. A \textbackslash details section shall be followed by an empty line.
+A doxygen comment block used for documenting a function can in addition to the  \textbackslash brief section have a section with more detailed description of the functionality. This section of shall annotated with the \textbackslash details command. The \textbackslash details section shall follow below the \textbackslash brief section. There shall be a empty line both before and after the \textbackslash details section.
 
 \subsubsection*{Examples}
 
@@ -8,42 +8,22 @@ A doxygen comment block used for documenting a function can in addition to the  
 \begin{minipage}[t]{0.47\textwidth}
     \lstinputlisting[
         xleftmargin = 3.4pt,
-        firstline = 11,
-        lastline = 13,
+        firstline = 6,
+        lastline = 15,
         title = {Non-Compliant}
-    ]{../code/doxy-rule-001.c}
+    ]{../code/doxy-rules/doxy-rule-003-non-compliant.c}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.47\textwidth}
     \lstinputlisting[
-        xrightmargin=3.4pt,
-        firstline=6,
-        lastline=20,
-        title={Compliant}
+        xrightmargin = 3.4pt,
+        firstline = 6,
+        lastline = 18,
+        title = {Compliant}
     ]{../code/doxy-rules/doxy-rule-003-compliant.c}
 \end{minipage}
 
-\noindent
-\begin{minipage}[t]{0.47\textwidth}
-    \lstinputlisting[
-        xleftmargin=3.4pt,
-        firstline=15,
-        lastline=17,
-        title={Non-Compliant}
-    ]{../code/doxy-rule-001.c}
-\end{minipage}\hfill
-
-\noindent
-\begin{minipage}[t]{0.47\textwidth}
-    \lstinputlisting[
-        xleftmargin=3.4pt,
-        firstline=19,
-        lastline=21,
-        title={Non-Compliant}
-    ]{../code/doxy-rule-001.c}
-\end{minipage}\hfill
-
 \subsubsection*{Reasoning}
 
-Doxygen supports multiple different formats for the comments block that is the base for the documentation generation. A single format shall be used in a project to improve source code readability. What format to use is somewhat arbitrary.
+The \textbackslash brief section shall be short so there is sometimes a need to have additional function documentation in a followup section, this is where the \textbackslash details section comes into play.
 
-The format specified by this rule is chosen due to that it closely resembles ordinary C comment blocks. Many editors will understand that this is a Doxygen comment block and highlight the block accordingly, and it is also understood and formatted correctly by many automatic source code formatting tools.
+The \textbackslash details annotation is strictly not needed because Doxygen will implicitly use a section following the \textbackslash brief section as the detailed function documentation. But explicitly stating that this is the detailed documentation makes it more clear what is placed in this section.
