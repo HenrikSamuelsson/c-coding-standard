@@ -1,0 +1,30 @@
+\subsection*{\doxygenRule{}}
+
+Doxygen annotation commands shall start with a backslash ( \textbackslash ).
+
+\subsubsection*{Examples}
+
+\noindent
+\begin{minipage}[t]{0.47\textwidth}
+    \lstinputlisting[
+        xleftmargin = 3.4pt,
+        firstline = 11,
+        lastline = 13,
+        title = {Non-Compliant}
+    ]{../code/doxy-rule-001.c}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\textwidth}
+    \lstinputlisting[
+        xrightmargin = 3.4pt,
+        firstline = 5,
+        lastline = 7,
+        title = {Compliant}
+    ]{../code/doxy-rule-001.c}
+\end{minipage}
+
+
+\subsubsection*{Reasoning}
+
+Doxygen supports multiple different formats for the comments block that is the base for the documentation generation. A single format shall be used in a project to improve source code readability. What format to use is somewhat arbitrary.
+
+The format specified by this rule is chosen due to that it closely resembles ordinary C comment blocks. Many editors will understand that this is a Doxygen comment block and highlight the block accordingly, and it is also understood and formatted correctly by many automatic source code formatting tools.
