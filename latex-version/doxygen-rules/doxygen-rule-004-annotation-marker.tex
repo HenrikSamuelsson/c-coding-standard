@@ -25,6 +25,5 @@ Doxygen annotation commands shall start with a backslash.
 
 \subsubsection*{Reasoning}
 
-Doxygen supports multiple different formats for the comments block that is the base for the documentation generation. A single format shall be used in a project to improve source code readability. What format to use is somewhat arbitrary.
-
-The format specified by this rule is chosen due to that it closely resembles ordinary C comment blocks. Many editors will understand that this is a Doxygen comment block and highlight the block accordingly, and it is also understood and formatted correctly by many automatic source code formatting tools.
+Doxygen accepts two different options for how to write the annotation commands. A command can start with either a backslash or the at-symbol.
+The backslash is chosen to be used because this symbol is part of the basic character set. It is desirable to have the entire source code base use only characters from the basic character set because it minimizes the risk of problems with portability and usage of various tools.
