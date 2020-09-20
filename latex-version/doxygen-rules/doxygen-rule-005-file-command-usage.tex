@@ -1,10 +1,10 @@
 \subsection*{\doxygenRule{}}
 
-A source code file with Doxygen annotations shall have an initial Doxygen comment block with the \textbackslash file command followed by the name of the file.
+A source code file with Doxygen annotations shall hold an initial Doxygen comment block where the first command shall be the \textbackslash file command followed by the name of the file.
 
 \subsubsection*{Examples}
 
-The examples assumes that name of the file where the comments resides is main.c.
+The examples assumes that name of the file where the comment block resides is main.c.
 
 \noindent
 \begin{minipage}[t]{0.47\textwidth}
@@ -17,15 +17,13 @@ The examples assumes that name of the file where the comments resides is main.c.
 \end{minipage}\hfill
 \begin{minipage}[t]{0.47\textwidth}
     \lstinputlisting[
-        xrightmargin=3.4pt,
-        firstline=5,
-        lastline=7,
-        title={Compliant}
-    ]{../code/doxy-rule-001.c}
+        xrightmargin = 3.4pt,
+        firstline = 1,
+        lastline = 3,
+        title = {Compliant}
+    ]{../code/doxy-rules/doxy-rule-005-compliant.c}
 \end{minipage}
 
 \subsubsection*{Reasoning}
 
-Doxygen supports multiple different formats for the comments block that is the base for the documentation generation. A single format shall be used in a project to improve source code readability. What format to use is somewhat arbitrary.
-
-The format specified by this rule is chosen due to that it closely resembles ordinary C comment blocks. Many editors will understand that this is a Doxygen comment block and highlight the block accordingly, and it is also understood and formatted correctly by many automatic source code formatting tools.
+Doxygen will, assuming default settings, only run the documentation process of global objects in a file if the file itself is marked as to be documented. This means that more or less all files in a project should include the \textbackslash file command at the top of the file.
