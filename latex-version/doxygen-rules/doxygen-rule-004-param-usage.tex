@@ -1,0 +1,43 @@
+\subsection*{\doxygenRule{}}
+
+A Doxygen comment block for a function shall use the \textbackslash param command for each function parameter also include the direction attribute as well as an description.
+
+\subsubsection*{Examples}
+
+\noindent
+\begin{minipage}[t]{0.47\textwidth}
+    \lstinputlisting[
+        xleftmargin = 3.4pt,
+        firstline = 11,
+        lastline = 13,
+        title = {Non-Compliant}
+    ]{../code/doxy-rule-001.c}
+     \lstinputlisting[
+        xleftmargin = 3.4pt,
+        firstline = 15,
+        lastline = 17,
+        title = {Non-Compliant}
+    ]{../code/doxy-rule-001.c}
+    \lstinputlisting[
+        xleftmargin = 3.4pt,
+        firstline = 19,
+        lastline = 21,
+        title ={Non-Compliant}
+    ]{../code/doxy-rule-001.c}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.47\textwidth}
+    \lstinputlisting[
+        xrightmargin = 3.4pt,
+        firstline = 5,
+        lastline = 7,
+        title = {Compliant}
+    ]{../code/doxy-rule-001.c}
+\end{minipage}
+
+
+\subsubsection*{Reasoning}
+
+Doxygen supports multiple different formats for the comments block that is the base for the documentation generation. A single format shall be used in a project to improve source code readability. What format to use is somewhat arbitrary.
+
+The format specified by this rule is chosen due to that it closely resembles ordinary C comment blocks. Many editors will understand that this is a Doxygen comment block and highlight the block accordingly, and it is also understood and formatted correctly by many automatic source code formatting tools.
+
