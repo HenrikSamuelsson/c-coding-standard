@@ -103,12 +103,22 @@ Strategy used for initialization of the members in an enum type shall be one of 
 \subsubsection{Reasoning}
 
 Minimizes the risk that a pair of members is assigned the same value by mistake.
+
+\noindent
 \begin{minipage}[t]{0.47\linewidth}
-\lstinputlisting[firstline=25, lastline=30, title={Non-Compliant}]{../code/main.c}
+\lstinputlisting[
+	firstline = 25,
+	lastline=30,
+	title={Non-Compliant}
+	]{../code/main.c}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.47\linewidth}
-\lstinputlisting[firstline=4, lastline=23, title={Compliant}]{../code/main.c}
+\lstinputlisting[
+	firstline=4,
+	lastline=23,
+	title={Compliant}
+	]{../code/main.c}
 \end{minipage}
 
 \subsection{No Usage of Restrict}
