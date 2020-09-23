@@ -8,7 +8,6 @@ int main(void)
     return 0;
 }
 
-
 void f(void)
 {
     printf("Invoking f with void type parameter.\n");

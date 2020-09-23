@@ -17,6 +17,10 @@ int getVoltage(void);
 int main(void)
 {
     printf("Doxygen rule 003 .");
+
+    int x = 60;
+
+    x = x << 34;
 }
 
 int getVoltage(void)
