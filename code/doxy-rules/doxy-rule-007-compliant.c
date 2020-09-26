@@ -9,7 +9,7 @@
  * \param[in]  y Second float number.
  *
  * \return     The largest of the two
- *             provided float numbers.
+ *             float numbers.
  */
 float fmaxf(float x, float y);
 

@@ -6,8 +6,7 @@
  *             of two float numbers.
  *
  * \details    Returns the largest of
- *             the two provided float
- *             numbers.
+ *             the two float numbers.
  *
  * \param[in]  x First float number.
  * \param[in]  y Second float number.
