@@ -1,0 +1,30 @@
+\subsection*{\doxygenRule{}}
+
+Function Doxygen comment blocks shall use the \textbackslash return command to document what the function returns. Functions that do not return a value shall be documented with "Void.".
+
+\subsubsection*{Examples}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \lstinputlisting[
+        xleftmargin = 3.4pt,
+        firstline = 4,
+        lastline = 22,
+        title = {Non-Compliant}
+    ]{../code/doxy-rules/doxy-rule-006-non-compliant.c}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \lstinputlisting[
+        xrightmargin = 3.4pt,
+        firstline = 4,
+        lastline = 22,
+        title = {Compliant}
+    ]{../code/doxy-rules/doxy-rule-006-compliant.c}
+\end{minipage}
+
+\subsubsection*{Reasoning}
+
+The \textbackslash param command is useful due that it ensures that each function parameter will have documentation, can be especially helpful when using an function written by other developers.
+
+The direction attribute makes it clear if a pointer type parameter will be written to by the function or not.
