@@ -1,4 +1,6 @@
 #include <stddef.h>
+#include <stdlib.h>
+
 /**
  * \brief      Copies RAM data.
  *
@@ -21,7 +23,5 @@ void memcpy(void *dest,
 
 int main(void)
 {
-    int x = 0;
-
-    x = x << 32;
+    return EXIT_SUCCESS;
 }

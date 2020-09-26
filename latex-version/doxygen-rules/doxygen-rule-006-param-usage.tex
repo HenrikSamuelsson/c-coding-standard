@@ -1,6 +1,6 @@
 \subsection*{\doxygenRule{}}
 
-A Doxygen comment block for a function shall use the \textbackslash param command for each function parameter also include the direction attribute as well as an description.
+Function Doxygen comment blocks shall use the \textbackslash param command for each function parameter and also include the direction attribute as well as an description.
 
 \subsubsection*{Examples}
 
@@ -8,23 +8,23 @@ A Doxygen comment block for a function shall use the \textbackslash param comman
 \begin{minipage}[t]{0.48\textwidth}
     \lstinputlisting[
         xleftmargin = 3.4pt,
-        firstline = 5,
-        lastline = 7,
+        firstline = 4,
+        lastline = 22,
         title = {Non-Compliant}
-    ]{../code/doxy-rule-001.c}
+    ]{../code/doxy-rules/doxy-rule-006-non-compliant.c}
 
 \end{minipage}\hfill
 \begin{minipage}[t]{0.48\textwidth}
     \lstinputlisting[
         xrightmargin = 3.4pt,
-        firstline = 2,
-        lastline = 20,
+        firstline = 4,
+        lastline = 22,
         title = {Compliant}
     ]{../code/doxy-rules/doxy-rule-006-compliant.c}
 \end{minipage}
 
-
 \subsubsection*{Reasoning}
 
-TODO
+The \textbackslash param command is useful due that it ensures that each function parameter will have documentation, can be especially helpful when using an function written by other developers.
 
+The direction attribute makes it clear if a pointer type parameter will be written to by the function or not.
