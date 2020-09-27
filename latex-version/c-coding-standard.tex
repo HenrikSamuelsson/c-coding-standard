@@ -10,11 +10,14 @@
 \usepackage[margin=1.2in]{geometry}
 
 \lstset{
-  basicstyle = \small\ttfamily,     % Change to mono spaced font for source code.
-  tabsize=4,                % Reduce the tab size.
-  language=C,               % Set C as programming language.
-  frame=single              % Put a frame around the source code listings.
+  basicstyle = \small\ttfamily,     % Change to small mono spaced font for source code.
+  tabsize = 4,                      % Reduce the tab size.
+  language = C,                     % Set C as programming language.
+  frame = single                    % Put a frame around the source code listings.
 }
+
+
+\newcommand\codelstwidth{0.48}
 
 % Counter for the coding rules.
 % TODO rename to myRule to something more appropriate.
@@ -67,7 +70,7 @@ Variables with automatic storage duration shall be initialized before use.
 The value of an automatic variable that is not initialized is undefined. Explicit initialization shall hence be done before using the variable, either when declaring the variable or just before the variable is used for the first time.
 
 \noindent
-\begin{minipage}[t]{0.47\linewidth}
+\begin{minipage}[t]{\codelstwidth\linewidth}
 	\begin{lstlisting}[
         xleftmargin = 3.4pt,
 		title = {Non-Compliant}
@@ -81,7 +84,7 @@ int f(void)
 \end{lstlisting}
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.47\linewidth}
+\begin{minipage}[t]{\codelstwidth\linewidth}
 \begin{lstlisting}[title={Compliant}]
 int foo(void)
 {
@@ -105,7 +108,7 @@ Strategy used for initialization of the members in an enum type shall be one of 
 Minimizes the risk that a pair of members is assigned the same value by mistake.
 
 \noindent
-\begin{minipage}[t]{0.47\linewidth}
+\begin{minipage}[t]{\codelstwidth\linewidth}
 \lstinputlisting[
 	firstline = 25,
 	lastline=30,
@@ -113,7 +116,7 @@ Minimizes the risk that a pair of members is assigned the same value by mistake.
 	]{../code/main.c}
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.47\linewidth}
+\begin{minipage}[t]{\codelstwidth\linewidth}
 \lstinputlisting[
 	firstline=4,
 	lastline=23,
@@ -131,11 +134,11 @@ The keyword restrict is type qualifier that can be added in a object pointer dec
 
 \subsubsection{Examples}
 
-\begin{minipage}[t]{0.47\linewidth}
+\begin{minipage}[t]{\codelstwidth\linewidth}
 \lstinputlisting[firstline=40, lastline=46, title={Non-Compliant}]{../code/main.c}
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.47\linewidth}
+\begin{minipage}[t]{\codelstwidth\linewidth}
 \lstinputlisting[firstline=32, lastline=38, title={Compliant}]{../code/main.c}
 \end{minipage}
 
