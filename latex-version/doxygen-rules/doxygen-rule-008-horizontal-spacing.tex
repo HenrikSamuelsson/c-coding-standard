@@ -1,0 +1,27 @@
+\subsection*{\doxygenRule{}}
+
+Doxygen annotation commands paragraphs shall be separated horizontally by a blank line. With the exception of the situation that the commands is of the same type. for example multiple \textbackslash param commands do not require any spacing.
+
+\subsubsection*{Examples}
+
+\noindent
+\begin{minipage}[t]{\codelstwidth\textwidth}
+    \lstinputlisting[
+        xleftmargin = 3.4pt,
+        firstline = 5,
+        lastline = 17,
+        title = {Non-Compliant}
+    ]{../code/doxy-rules/doxy-rule-008-non-compliant.c}
+\end{minipage}\hfill
+\begin{minipage}[t]{\codelstwidth\textwidth}
+    \lstinputlisting[
+        xrightmargin = 3.4pt,
+        firstline = 5,
+        lastline = 20,
+        title = {Compliant}
+    ]{../code/doxy-rules/doxy-rule-008-compliant.c}
+\end{minipage}
+
+\subsubsection*{Reasoning}
+
+This rule is mainly intended for readability reasons, to avoid having a wall of documentation text, that can be hard on the eyes.
