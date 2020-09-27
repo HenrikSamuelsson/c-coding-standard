@@ -68,3 +68,4 @@ resources
 # Eclipse
 .cproject
 .project
+.settings/
