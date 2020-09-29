@@ -6,11 +6,10 @@
 /**
  * \brief   Get voltage level.
  *
- * \details Returns the battery
- *          voltage level as an,
- *          integer value in mV.
- *          For example 3.3 V will
- *          be returned as 3300.
+ * \details Returns battery voltage
+ *          level, as an integer value 
+ *          in mV. For example 3.3 V 
+ *          will be returned as 3300.
  *
  * \param   Void.
  * \return  The voltage level.
