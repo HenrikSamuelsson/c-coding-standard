@@ -1,3 +1,26 @@
-\subsection*{\myRule{}}
+\subsection*{\codingRule{}}
 
-Intentionally incomplete statements shall be annotated by an empty macro named DO\_NOTHING.
+The intentional null statement i.e. a statement that have no effect shall be annotated by an empty macro named DO\_NOTHING. This macro shall be defined in a single place, suitably in a project specific header file.
+
+\subsubsection*{Examples}
+
+\begin{minipage}[t]{\codelstwidth\linewidth}
+    \lstinputlisting[
+        xleftmargin = 3.4pt,
+        firstline = 43,
+        lastline = 61,
+        title = {Non-Compliant}
+        ]{../code/rule-005/rule-005-non-compliant.c}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{\codelstwidth\linewidth}
+    \lstinputlisting[
+        xrightmargin = 3.4pt,
+        linerange={4-9, 42-61},
+        title = {Compliant}
+        ]{../code/rule-005/rule-005-compliant.c}
+\end{minipage}
+
+\subsubsection*{Reasoning}
+
+Explicitly stating that there is nothing to do makes it clear that the statement have not been left blank by mistake. Having a standardized why to indicate this with a macro improves readability, since every occurrence of this type will look the same throughout all project source files.

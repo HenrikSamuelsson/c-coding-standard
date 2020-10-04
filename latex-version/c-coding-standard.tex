@@ -12,6 +12,8 @@
 \lstset{
   basicstyle = \small\ttfamily,     % Change to small mono spaced font for source code.
   tabsize = 4,                      % Reduce the tab size.
+  showlines = true,                 % Print empty lines at end of listings
+  emptylines=1,
   language = C,                     % Set C as programming language.
   frame = single                    % Put a frame around the source code listings.
 }
@@ -23,7 +25,7 @@
 % Counter for the coding rules.
 % TODO rename to myRule to something more appropriate.
 \newcounter{Rule}
-\newcommand\myRule{\stepcounter{Rule}Rule \theRule}
+\newcommand\codingRule{\stepcounter{Rule}Rule \theRule}
 
 % Counter for the rules related to Doxygen.
 \newcounter{DoxygenRule}
@@ -142,14 +144,6 @@ The keyword restrict is type qualifier that can be added in a object pointer dec
 \begin{minipage}[t]{\codelstwidth\linewidth}
 \lstinputlisting[firstline=32, lastline=38, title={Compliant}]{../code/main.c}
 \end{minipage}
-
-\subsection{Use Unsigned Type For Bit Manipulation}
-
-Operands of bitwise operation shall be of unsigned integer type.
-
-\subsubsection{Reasoning}
-
-The result of bitwise operations on signed integers are implementation-defined.
 
 \input{coding-rules/rule_001_use_the_void_parameter.tex}
 \input{coding-rules/rule_002_enum_for_related_constants.tex}
