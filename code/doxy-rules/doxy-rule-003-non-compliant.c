@@ -5,10 +5,9 @@
 
 /**
  * \brief   Get voltage level.
- * Returns the battery voltage
- * level, as an integer value in
- * mV. For example 3.3 V will be
- * returned as 3300.
+ * Returns battery voltage level, as 
+ * an integer value in mV. For example 
+ * 3.3 V will be returned as 3300.
  * \param   Void.
  * \return  The voltage level.
  */
@@ -18,9 +17,7 @@ int main(void)
 {
     printf("Doxygen rule 003 .");
 
-    int x = 60;
-
-    x = x << 34;
+    return 0;
 }
 
 int getVoltage(void)
