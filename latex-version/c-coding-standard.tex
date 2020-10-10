@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass{report}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
@@ -31,7 +31,12 @@
 \newcounter{DoxygenRule}
 \newcommand\doxygenRule{\stepcounter{DoxygenRule}Doxygen Rule \theDoxygenRule}
 
+\title{C Programming Style Guide}
+\author{Henrik Samuelsson}
+
 \begin{document}
+
+\maketitle
 
 \section{Introduction}
 
@@ -64,39 +69,7 @@ type qualifier & Adds attributes to types at the point of declaration. There are
 
 \section{Rules}
 
-\subsection{Initialize Automatic Variables}
 
-Variables with automatic storage duration shall be initialized before use.
-
-\subsubsection{Reasoning}
-
-The value of an automatic variable that is not initialized is undefined. Explicit initialization shall hence be done before using the variable, either when declaring the variable or just before the variable is used for the first time.
-
-\noindent
-\begin{minipage}[t]{\codelstwidth\linewidth}
-	\begin{lstlisting}[
-        xleftmargin = 3.4pt,
-		title = {Non-Compliant}
-	]
-int f(void)
-{
-	uint32_t i;
-	i++;
-	return i;
-}
-\end{lstlisting}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{\codelstwidth\linewidth}
-\begin{lstlisting}[title={Compliant}]
-int foo(void)
-{
-	uint32_t i = 0;
-	i++;
-	return i;
-}
-\end{lstlisting}
-\end{minipage}
 
 \subsection{Initialize Constant Variables When Declared}
 
@@ -160,6 +133,7 @@ The keyword restrict is type qualifier that can be added in a object pointer dec
 \input{coding-rules/rule_001_use_the_void_parameter.tex}
 \input{coding-rules/rule_002_enum_for_related_constants.tex}
 \input{coding-rules/rule_003_preserve_pointer_type_qualifiers.tex}
+\input{coding-rules/rule-004-automatic-variable-init.tex}
 \input{coding-rules/rule-005-do-nothing-define.tex}
 \input{coding-rules/rule-007-no-unused-elements.tex}
 

@@ -1,1 +1,33 @@
-TODO paste code from main document here
+\subsection*{\codingRule{}}
+
+Variables with automatic storage duration shall be initialized before use.
+
+\subsubsection{Reasoning}
+
+The value of an automatic variable that is not initialized is undefined. Explicit initialization shall hence be done before using the variable, either when declaring the variable or just before the variable is used for the first time.
+
+\noindent
+\begin{minipage}[t]{\codelstwidth\linewidth}
+	\begin{lstlisting}[
+        xleftmargin = 3.4pt,
+		title = {Non-Compliant}
+	]
+int f(void)
+{
+	uint32_t i;
+	i++;
+	return i;
+}
+\end{lstlisting}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{\codelstwidth\linewidth}
+\begin{lstlisting}[title={Compliant}]
+int foo(void)
+{
+	uint32_t i = 0;
+	i++;
+	return i;
+}
+\end{lstlisting}
+\end{minipage}
