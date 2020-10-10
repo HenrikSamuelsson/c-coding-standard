@@ -58,7 +58,7 @@ resources
 *.bbl
 *.blg
 *.log
-*.fbd_latexmk
+*.fdb_latexmk
 *.fls
 *.synctex.gz
 __latexindent_temp.tex
