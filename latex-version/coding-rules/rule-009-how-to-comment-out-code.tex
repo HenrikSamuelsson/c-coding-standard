@@ -1,0 +1,28 @@
+\subsection*{\codingRule{}}
+
+Deactivation of a code section, also known as commenting out, shall be done by placing the code section in between the preprocessor directives \#if 0 and \#endif.
+
+\subsubsection*{Examples}
+
+\noindent
+\begin{minipage}[t]{\codelstwidth\linewidth}
+    \lstinputlisting[
+        xleftmargin = 3.4pt,
+        firstline = 6,
+        lastline = 12,
+        title={Non-Compliant}
+        ]{../code/coding-rules/rule-009/rule-009-non-compliant.c}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{\codelstwidth\linewidth}
+    \lstinputlisting[
+        xrightmargin = 3.4pt,
+        firstline = 6,
+        lastline = 14,
+        title = {Compliant}
+        ]{../code/coding-rules/rule-009/rule-009-compliant.c}
+\end{minipage}
+
+\subsubsection*{Reasoning}
+
+Code can be deactivated by placing it in a comment or by using the above preprocessor directive. Choosing to use the latter strategy is based on that it means that all comments will be actual comments. The chosen strategy also makes it possible to find all blocks of commented out code by searching for \#if 0.
