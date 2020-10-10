@@ -5,10 +5,13 @@
 
 /**
  * \brief   Get voltage level.
- * Returns battery voltage level, as 
- * an integer value in mV. For example 
+ *
+ * Returns battery voltage level as an
+ * integer value in mV. For example
  * 3.3 V will be returned as 3300.
+ *
  * \param   Void.
+ *
  * \return  The voltage level.
  */
 int getVoltage(void);
