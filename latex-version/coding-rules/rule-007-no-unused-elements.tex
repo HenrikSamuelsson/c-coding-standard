@@ -1,9 +1,28 @@
 \subsection*{\codingRule{}}
 
-Remove all unused elements such as unused functions, variables, constants, parameters, typedefs, tags, labels, macros, etcetera.
+There shall be no unused elements in the code. Meaning that unused functions, variables, constants, parameters, typedefs, tags, labels, macros, etcetera shall be removed.
 
 \subsubsection*{Examples}
 
+\noindent
+\begin{minipage}[t]{\codelstwidth\linewidth}
+    \lstinputlisting[
+        xleftmargin = 3.4pt,
+        firstline = 3,
+        lastline = 6,
+        title={Non-Compliant}
+        ]{../code/coding-rules/rule-007/rule-007-non-compliant.c}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{\codelstwidth\linewidth}
+    \lstinputlisting[
+        xrightmargin = 3.4pt,
+        firstline=3,
+        lastline=6,
+        title={Compliant}
+        ]{../code/coding-rules/rule-007/rule-007-compliant.c}
+\end{minipage}
+
 \subsubsection*{Reasoning}
 
-Cluttering the code base with unused elements impairs maintainability due to making it harder to read and understand the code.
+Cluttering the code base with unused elements makes it harder to read and understand the code which impairs maintainability.
