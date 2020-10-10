@@ -61,6 +61,8 @@ resources
 *.fbd_latexmk
 *.fls
 *.synctex.gz
+__latexindent_temp.tex
+
 
 # Visual Stodio Code
 .metadata
