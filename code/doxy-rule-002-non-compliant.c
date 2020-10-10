@@ -5,7 +5,9 @@
 
 /**
  * Get voltage level.
+ *
  * \param  Void.
+ *
  * \return Voltage level.
  */
 int getVoltage(void);

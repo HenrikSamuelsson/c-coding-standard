@@ -1,6 +1,6 @@
 \subsection*{\doxygenRule{}}
 
-A doxygen comment block used for documenting a function shall include an initial section annotated by the \textbackslash brief command. The text for this command shall be a short, preferably one-line, description capturing the core functionality. The \textbackslash brief section shall be followed by an empty line.
+A doxygen comment block used for documenting a function shall include an initial section annotated by the \textbackslash brief command. The text for this command shall be a short one-line description capturing the core functionality.
 
 \subsubsection*{Examples}
 
@@ -9,7 +9,7 @@ A doxygen comment block used for documenting a function shall include an initial
     \lstinputlisting[
         xleftmargin = 3.4pt,
         firstline = 6,
-        lastline = 11,
+        lastline = 13,
         title = {Non-Compliant}
     ]{../code/doxy-rule-002-non-compliant.c}
 \end{minipage}\hfill
@@ -17,11 +17,11 @@ A doxygen comment block used for documenting a function shall include an initial
     \lstinputlisting[
         xrightmargin = 3.4pt,
         firstline = 6,
-        lastline = 12,
+        lastline = 13,
         title = {Compliant}
     ]{../code/doxy-rule-002-compliant.c}
 \end{minipage}
 
 \subsubsection*{Reasoning}
 
- Most functions worthy of a Doxygen comment block deserve at least one line of documentation describing functionality and purpose. The \textbackslash brief command is meant to be used for this type of short, concise, documentation. More detailed description can optionally be inserted after the empty line TODO add reference to doxygen rule 003.
+ Most functions worthy of a Doxygen comment block deserve at least one line of documentation describing functionality and purpose. The \textbackslash brief command is meant to be used for this type of concise documentation. More detailed description can optionally be inserted after the empty line TODO add reference to doxygen rule 003.
