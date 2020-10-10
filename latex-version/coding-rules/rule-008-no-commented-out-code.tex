@@ -1,6 +1,6 @@
 \subsection*{\codingRule{}}
 
-There shall not be any commented out code in the official released code.
+There shall not be deactivated code sections, also known as commented out code, in the official released code.
 
 \subsubsection*{Examples}
 
@@ -9,7 +9,7 @@ There shall not be any commented out code in the official released code.
     \lstinputlisting[
         xleftmargin = 3.4pt,
         firstline = 6,
-        lastline = 12,
+        lastline = 14,
         title={Non-Compliant}
         ]{../code/coding-rules/rule-008/rule-008-non-compliant.c}
 \end{minipage}
@@ -25,4 +25,5 @@ There shall not be any commented out code in the official released code.
 
 \subsubsection*{Reasoning}
 
-Commented out code impairs readability which affects maintainability and also makes code reviews more time consuming than necessary. Code blocks needed to be kept for future reference can instead be preserved by a branch in the version control system.
+Keeping deactivated code impairs readability which affects maintainability and makes code reviews more time consuming than necessary.
+Code blocks needed to be kept for future reference can be preserved by a branch in the version control system.

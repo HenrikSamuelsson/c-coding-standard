@@ -1,6 +1,6 @@
 \subsection*{\codingRule{}}
 
-Deactivation of a code section, also known as commenting out, shall be done by placing the code section in between the preprocessor directives \#if 0 and \#endif.
+Deactivation of a code section, also known as commenting out code, shall be done by placing the code section in between the preprocessor directives \#if 0 and \#endif.
 
 \subsubsection*{Examples}
 
@@ -25,4 +25,4 @@ Deactivation of a code section, also known as commenting out, shall be done by p
 
 \subsubsection*{Reasoning}
 
-Code can be deactivated by placing it in a comment or by using the above preprocessor directive. Choosing to use the latter strategy is based on that it means that all comments will be actual comments. The chosen strategy also makes it possible to find all blocks of commented out code by searching for \#if 0.
+Code can be deactivated by placing it in a comment or by using the above preprocessor directive. The latter strategy chosen based on that it means that all comments will be actual comments. The chosen strategy also makes it possible to find all blocks of commented out code by searching for \#if 0.
