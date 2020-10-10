@@ -113,17 +113,19 @@ Minimizes the risk that a pair of members is assigned the same value by mistake.
 \noindent
 \begin{minipage}[t]{\codelstwidth\linewidth}
 \lstinputlisting[
+	xleftmargin = 3.4pt,
 	firstline = 25,
 	lastline=30,
-	title={Non-Compliant}
+	title = {Non-Compliant}
 	]{../code/main.c}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{\codelstwidth\linewidth}
 \lstinputlisting[
-	firstline=4,
-	lastline=23,
-	title={Compliant}
+	xrightmargin = 3.4pt,
+	firstline = 4,
+	lastline = 23,
+	title = {Compliant}
 	]{../code/main.c}
 \end{minipage}
 
@@ -137,12 +139,22 @@ The keyword restrict is type qualifier that can be added in a object pointer dec
 
 \subsubsection{Examples}
 
+\noindent
 \begin{minipage}[t]{\codelstwidth\linewidth}
-\lstinputlisting[firstline=40, lastline=46, title={Non-Compliant}]{../code/main.c}
+\lstinputlisting[
+	firstline = 40,
+	lastline = 46,
+	title = {Non-Compliant}
+	]{../code/main.c}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{\codelstwidth\linewidth}
-\lstinputlisting[firstline=32, lastline=38, title={Compliant}]{../code/main.c}
+\lstinputlisting[
+	xrightmargin = 3.4pt,
+	firstline = 32,
+	lastline = 38,
+	title={Compliant}
+	]{../code/main.c}
 \end{minipage}
 
 \input{coding-rules/rule_001_use_the_void_parameter.tex}
