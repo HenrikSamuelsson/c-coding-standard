@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1602298955 "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.tex" "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.pdf" "c-coding-standard" 1602298957
+["pdflatex"] 1602303749 "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.tex" "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.pdf" "c-coding-standard" 1602303751
   "../code/doxy-rule-001.c" 1600006344 281 eba6aad064f1533e72acb51e14f97160 ""
   "../code/doxy-rule-002-compliant.c" 1600510310 352 9c6dd148a176bd28227f626463dfde62 ""
   "../code/doxy-rule-002-non-compliant.c" 1600510169 393 79f3e4f6851d70e53cd8109945790412 ""
@@ -79,11 +79,12 @@
   "C:/Users/Henrik/AppData/Roaming/MiKTeX/2.9/tex/latex/listings/lstlang1.sty" 1568384763 207561 aebe3e8af1b68d971e7e9a0dfafd415b ""
   "C:/Users/Henrik/AppData/Roaming/MiKTeX/2.9/tex/latex/listings/lstmisc.sty" 1568384762 79106 b10a64745378a9ff5b2568d10a7bf108 ""
   "appendix-a-doxygen-usage.tex" 1601751070 2006 b9f4e5a736bf7d42a2f35df652c94753 ""
-  "c-coding-standard.aux" 1602298956 1391 d24c983730cceb0eec679005399d2948 "pdflatex"
-  "c-coding-standard.tex" 1601826175 6137 3ca593bae452bd2aad33998e7055a6ec ""
-  "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.aux" 1602298956 1391 d24c983730cceb0eec679005399d2948 "pdflatex"
-  "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.tex" 1601826175 6137 3ca593bae452bd2aad33998e7055a6ec ""
+  "c-coding-standard.aux" 1602303751 1391 d24c983730cceb0eec679005399d2948 "pdflatex"
+  "c-coding-standard.tex" 1602303748 6191 87d9d0c9b2491b9431122c59c107b1c3 ""
+  "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.aux" 1602303751 1391 d24c983730cceb0eec679005399d2948 "pdflatex"
+  "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.tex" 1602303748 6191 87d9d0c9b2491b9431122c59c107b1c3 ""
   "coding-rules/rule-005-do-nothing-define.tex" 1602298952 1084 785dabe6b18f08ac4e0a57ab7c9265b6 ""
+  "coding-rules/rule-007-no-unused-elements.tex" 1602303748 27 57298b4ff1f3ddaeacf049f3d557159e ""
   "coding-rules/rule_001_use_the_void_parameter.tex" 1601826240 1008 ea6ce1d137eda9456fc796d8ea369f18 ""
   "coding-rules/rule_002_enum_for_related_constants.tex" 1601826240 930 fc195612a9f3d64be42c416b6f506237 ""
   "coding-rules/rule_003_preserve_pointer_type_qualifiers.tex" 1601826240 889 9e765c36e19fa6ce8da0188423dcf901 ""
@@ -96,9 +97,9 @@
   "doxygen-rules/doxygen-rule-007-return-usage.tex" 1601784977 1239 d52d03e554a01a7b39c88870111ffc22 ""
   "doxygen-rules/doxygen-rule-008-horizontal-spacing.tex" 1601805540 985 a7142f3cdb82073ac7f1fd675cddc5f0 ""
   (generated)
-  "c-coding-standard.aux"
   "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.pdf"
   "c-coding-standard.log"
-  "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.log"
-  "c-coding-standard.pdf"
   "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.aux"
+  "c:/git_repos/c-coding-standard/latex-version/c-coding-standard.log"
+  "c-coding-standard.aux"
+  "c-coding-standard.pdf"
