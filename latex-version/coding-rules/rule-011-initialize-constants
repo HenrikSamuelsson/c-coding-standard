@@ -1,0 +1,29 @@
+\subsection*{\codingRule{}}
+
+A const-qualified object shall be initialized directly when declared.
+
+\subsubsection*{Examples}
+
+\noindent
+\begin{minipage}[t]{\codelstwidth\linewidth}
+    \lstinputlisting[
+        xleftmargin = 3.4pt,
+        firstline = 6,
+        lastline = 12,
+        title={Non-Compliant}
+        ]{../code/coding-rules/rule-009/rule-009-non-compliant.c}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{\codelstwidth\linewidth}
+    \lstinputlisting[
+        xrightmargin = 3.4pt,
+        firstline = 6,
+        lastline = 14,
+        title = {Compliant}
+        ]{../code/coding-rules/rule-009/rule-009-compliant.c}
+\end{minipage}
+
+\subsubsection*{Reasoning}
+
+
+
