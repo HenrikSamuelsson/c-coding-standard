@@ -8,5 +8,4 @@
 \contentsline {subsubsection}{Reasoning}{3}{section*.3}%
 \contentsline {subsubsection}{Examples}{3}{section*.4}%
 \contentsline {subsection}{Rule 1}{4}{section*.7}%
-\contentsline {subsection}{\numberline {0.2.4}Initialize Automatic Variables}{5}{subsection.0.2.4}%
-\contentsline {subsubsection}{Reasoning}{5}{section*.14}%
+\contentsline {subsubsection}{Reasoning}{5}{section*.15}%
