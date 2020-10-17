@@ -43,9 +43,9 @@
 \tableofcontents
 \newpage
 
-\section{Introduction}
+\chapter{Introduction}
 
-\subsection{Terms and Definitions}
+\section{Terms and Definitions}
 
 A quick reference with explanations of terms used in this document is provided in Table \ref{tab:terms-and-defs}. Note that the definitions are often C programming language specific and might not be true in other contexts.
 
@@ -72,13 +72,13 @@ type qualifier & Adds attributes to types at the point of declaration. There are
 \label{tab:terms-and-defs}
 \end{table}
 
-\section{Rules}
+\chapter{Rules}
 
-\subsection{Strict Enumeration Initialization}
+\section{Strict Enumeration Initialization}
 
 Strategy used for initialization of the members in an enum type shall be one of the following: not specifying any values, specifying all values, specifying only the first value.
 
-\subsubsection{Reasoning}
+\subsection{Reasoning}
 
 Minimizes the risk that a pair of members is assigned the same value by mistake.
 
@@ -101,15 +101,15 @@ Minimizes the risk that a pair of members is assigned the same value by mistake.
 	]{../code/main.c}
 \end{minipage}
 
-\subsection{No Usage of Restrict}
+\section{No Usage of Restrict}
 
 Do not use the restrict type qualifier.
 
-\subsubsection{Reasoning}
+\subsection{Reasoning}
 
 The keyword restrict is type qualifier that can be added in a object pointer declaration. It provides a hint to the compiler that only this pointer will be used access the object. This will in some situations make it possible for the compiler to generate a more optimized result. The behavior of the code will be undefined if this guarantee is not meet. Using restrict burdens the design of the code to guarantee that the memory areas do not overlap and adds a risk, the restrict type qualifier shall hence not be used.
 
-\subsubsection{Examples}
+\subsection{Examples}
 
 \noindent
 \begin{minipage}[t]{\codelstwidth\linewidth}
