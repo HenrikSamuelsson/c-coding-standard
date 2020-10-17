@@ -1,6 +1,7 @@
 \subsection*{\codingRule{}}
+\addcontentsline{toc}{subsection}{Rule \theRule}
 
-A const-qualified object shall be initialized directly when declared.
+A const-qualified object, i.e. variable, shall be initialized directly when declared.
 
 \subsubsection*{Examples}
 
@@ -8,19 +9,19 @@ A const-qualified object shall be initialized directly when declared.
 \begin{minipage}[t]{\codelstwidth\linewidth}
     \lstinputlisting[
         xleftmargin = 3.4pt,
-        firstline = 6,
-        lastline = 12,
-        title={Non-Compliant}
-        ]{../code/coding-rules/rule-009/rule-009-non-compliant.c}
+        firstline = 3,
+        lastline = 10,
+        title = {Non-Compliant}
+        ]{../code/coding-rules/rule-011/rule-011-non-compliant.c}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{\codelstwidth\linewidth}
     \lstinputlisting[
         xrightmargin = 3.4pt,
-        firstline = 6,
-        lastline = 14,
+        firstline = 3,
+        lastline = 10,
         title = {Compliant}
-        ]{../code/coding-rules/rule-009/rule-009-compliant.c}
+        ]{../code/coding-rules/rule-011/rule-011-compliant.c}
 \end{minipage}
 
 \subsubsection*{Reasoning}

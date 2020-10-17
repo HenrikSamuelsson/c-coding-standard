@@ -6,5 +6,6 @@
 \contentsline {subsection}{\numberline {0.2.2}No Usage of Restrict}{3}{subsection.0.2.2}%
 \contentsline {subsubsection}{Reasoning}{3}{section*.3}%
 \contentsline {subsubsection}{Examples}{3}{section*.4}%
-\contentsline {subsection}{Rule 1}{4}{section*.7}%
+\contentsline {subsection}{Rule 2}{4}{section*.8}%
 \contentsline {subsubsection}{Reasoning}{5}{section*.15}%
+\contentsline {subsection}{Rule 10}{8}{section*.29}%

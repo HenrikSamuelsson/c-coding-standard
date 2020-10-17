@@ -1,6 +1,10 @@
+#include <stdlib.h>
+
 int main(void)
 {
-    const int N;
-    printf("%d\n", N);
-    return 0;
+    const int START_INDEX;
+
+    printf("%d\n", START_INDEX);
+
+    return EXIT_SUCCESS;
 }
