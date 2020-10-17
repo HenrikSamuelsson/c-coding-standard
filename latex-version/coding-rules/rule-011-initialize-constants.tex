@@ -26,5 +26,4 @@ A const-qualified object, i.e. variable, shall be initialized directly when decl
 
 \subsubsection*{Reasoning}
 
-
-
+A const qualified object cannot be changed after the time of declaration and must hence be initialized directly. This is especially important for objects with automatic storage duration that if not initialized will hold a undefined value. Static objects will default to zero if not initialized and must hence be initialized if the desired value is anything else.
