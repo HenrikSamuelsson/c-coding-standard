@@ -1,5 +1,6 @@
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Terms and Definitions}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.1}About}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Terms and Definitions}{2}{section.1.2}%
 \contentsline {chapter}{\numberline {2}Rules}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Strict Enumeration Initialization}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Reasoning}{3}{subsection.2.1.1}%
@@ -9,3 +10,4 @@
 \contentsline {subsection}{Rule 2}{4}{section*.5}%
 \contentsline {subsubsection}{Reasoning}{6}{section*.12}%
 \contentsline {subsection}{Rule 10}{8}{section*.26}%
+\contentsline {chapter}{\numberline {3}Appendix A Doxygen}{10}{chapter.3}%

@@ -1,0 +1,19 @@
+{
+    "latex-workshop.chktex.args.root": [
+        "-wall",
+        "-n22",
+        "-n30",
+        "-e16",
+        "-q",
+        "-n1"
+    ],
+    "latex-workshop.chktex.args.active": [
+        "-wall",
+        "-n22",
+        "-n30",
+        "-e16",
+        "-q",
+        "-n1"
+    ],
+    "latex-workshop.chktex.enabled": true
+}

@@ -1,0 +1,32 @@
+\section*{\codingRule{}}
+
+Strategy used for initialization of the members in an enum type shall be one of the following:
+\begin{itemize}
+    \item Not specifying any values
+    \item Specifying only the first value
+    \item Specifying all values in ascending order
+\end{itemize}
+\subsection*{Examples}
+
+\noindent
+\begin{minipage}[t]{\codelstwidth\linewidth}
+    \lstinputlisting[
+        xleftmargin = 3.4pt,
+        firstline = 3,
+        lastline = 3,
+        title = {Non-Compliant}
+        ]{../code/rule-001/rule_001_non_compliant.c}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{\codelstwidth\linewidth}
+    \lstinputlisting[
+        xrightmargin = 3.4pt,
+        firstline = 3,
+        lastline = 3,
+        title = {Compliant}
+        ]{../code/rule-001/rule_001_compliant.c}
+\end{minipage}
+
+\subsection*{Reasoning}
+
+A C function declaration with an empty parameter list is not the same as that the function has no parameters, it is an obsolete way to declare a function without needing to explicitly specify the number, and types of parameters. Using void states explicitly that a function does not takes any parameters, making it possible for the compiler to check for conflicts in the function usage.

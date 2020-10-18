@@ -45,9 +45,11 @@
 
 \chapter{Introduction}
 
+\section{About}
+
 \section{Terms and Definitions}
 
-A quick reference with explanations of terms used in this document is provided in Table \ref{tab:terms-and-defs}. Note that the definitions are often C programming language specific and might not be true in other contexts.
+A quick reference with explanations of terms used in this document is provided in Table~\ref{tab:terms-and-defs}. Note that the definitions are often C programming language specific and might not be true in other contexts.
 
 \begin{table}[h]
 \begin{tabularx}{\textwidth}{lX}
@@ -68,8 +70,7 @@ type & Variable classification such as; int, char, double, et cetera, that deter
 type qualifier & Adds attributes to types at the point of declaration. There are four type qualifiers; const, restrict, volatile, and \_Atomic. \\
 \bottomrule
 \end{tabularx}
-\caption{Term and definition quick reference}
-\label{tab:terms-and-defs}
+\caption{Term and definition quick reference}\label{tab:terms-and-defs}    % ChkTeX 24
 \end{table}
 
 \chapter{Rules}
@@ -139,6 +140,7 @@ The keyword restrict is type qualifier that can be added in a object pointer dec
 \input{coding-rules/rule-008-no-commented-out-code.tex}
 \input{coding-rules/rule-010-no-logical-short-circuit-usage.tex}
 \input{coding-rules/rule-011-initialize-constants.tex}
+\input{coding-rules/rule-012-enum-initialization.tex}
 
 \input{appendix-a-doxygen-usage.tex}
 
