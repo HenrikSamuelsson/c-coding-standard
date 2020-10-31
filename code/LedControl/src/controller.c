@@ -6,20 +6,16 @@
 #include "controller.h"
 
 #include "board.h"
+#include "led.h"
+#include "switch.h"
 
 #include "S32K144.h"
 
 void controllerTask(void)
 {
-    /*! -If Pad Data Input = 1 (BTN0 [SW2] pushed)
-     *
-     * Clear Output on port D0 (LED on)
-     *
-     */
-
-    if (PTC->PDIR & (1 << PTC12))
+    if (switchIsEnabled())
     {
-        PTD->PCOR |= 1 << PTD0;
+        turnOn(BLUE_LED);
     }
     else
     { /* -If BTN0 was not pushed*/

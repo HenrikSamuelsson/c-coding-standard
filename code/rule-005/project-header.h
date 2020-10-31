@@ -1,5 +1,5 @@
 /**
  * \brief For documentation of null
- *        statements do nothing.
+ *        statements that do nothing.
  */
 #define DO_NOTHING
