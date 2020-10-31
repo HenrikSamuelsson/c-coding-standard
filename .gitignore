@@ -63,7 +63,6 @@ resources
 *.synctex.gz
 __latexindent_temp.tex
 
-
 # Visual Stodio Code
 .metadata
 
@@ -71,3 +70,7 @@ __latexindent_temp.tex
 .cproject
 .project
 .settings/
+
+# doxygen
+doxygen-output/
+doxygen-working-directory/
