@@ -1,11 +1,7 @@
+#include "project-header.h"
+
 #include <stdbool.h>
 #include <stdlib.h>
-
-/*
- * For documenting intentional null
- * statements that do nothing.
- */
-#define DO_NOTHING
 
 #define TEMP_MIN    18U
 #define TEMP_MAX    25U

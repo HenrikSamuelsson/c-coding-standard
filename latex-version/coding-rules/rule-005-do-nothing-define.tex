@@ -1,6 +1,6 @@
 \subsection*{\codingRule{}}
 
-The intentional null statement i.e.\ a statement that have no effect shall be annotated by an empty macro named DO\_NOTHING. This macro shall be defined in a single place, suitably in a project specific header file.    % ChkTeX 13
+Occurrence of an intentional null statement i.e.\ a statement that have no effect shall be annotated with an empty macro named DO\_NOTHING. This macro shall be defined in a single place, suitably in a project specific header file.    % ChkTeX 13
 
 \subsubsection*{Examples}
 
@@ -15,13 +15,19 @@ The intentional null statement i.e.\ a statement that have no effect shall be an
 \end{minipage}
 \hfill
 \begin{minipage}[t]{\codelstwidth\linewidth}
+     \lstinputlisting[
+        xrightmargin = 3.4pt,
+        firstline = 1,
+        lastline = 5,
+        title = {Compliant}
+        ]{../code/rule-005/project-header.h}
     \lstinputlisting[
         xrightmargin = 3.4pt,
-        linerange = {4-9, 42-61},    % ChkTeX 8
-        title = {Compliant}
+        firstline = 39,
+        lastline = 57,
         ]{../code/rule-005/rule-005-compliant.c}
 \end{minipage}
 
 \subsubsection*{Reasoning}
 
-Explicitly stating that there is nothing to do makes it clear that the statement have not been left blank by mistake. Having a standardized way to indicate this with a macro improves readability, since every occurrence of this type will look the same throughout all project source files.
+Explicitly stating that there is nothing to do makes it clear that the statement have not been left blank by mistake. Having a standardized way to indicate null statements with a macro improves readability, since every occurrence of this type will look the same throughout all project source files.
