@@ -1,7 +1,5 @@
-/*!
- * controller.c
- *
- *
+/**
+ * \file controller.c
  */
 #include "controller.h"
 
