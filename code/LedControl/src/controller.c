@@ -18,7 +18,7 @@ void controllerTask(void)
         turnOn(BLUE_LED);
     }
     else
-    { /* -If BTN0 was not pushed*/
-        PTD->PSOR |= 1 << PTD0; /* Set Output on port D0 (LED off) */
+    {
+        turnOff(BLUE_LED);
     }
 }

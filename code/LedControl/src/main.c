@@ -31,7 +31,7 @@ int main(void)
         controllerTask();
     }
 
-    assert(false);    /* This line and below lines should never be reached. */
+    assert(false);    /* This and below lines should never be reached. */
 
     return EXIT_SUCCESS;
 }
