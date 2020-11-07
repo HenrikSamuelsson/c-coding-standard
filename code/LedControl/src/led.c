@@ -16,13 +16,13 @@ void turnOn(LedType_t led)
     switch (led)
     {
     case RED_LED:
-        PTD->PCOR |= 1 << PTD15;
+        PTD->PCOR |= 1 << RED_LED_PIN;
         break;
     case GREEN_LED:
-        PTD->PCOR |= 1 << PTD16;
+        PTD->PCOR |= 1 << GREEN_LED_PIN;
         break;
     case BLUE_LED:
-        PTD->PCOR |= 1 << PTD0;
+        PTD->PCOR |= 1 << BLUE_LED_PIN;
         break;
     default:
         assert(false);
@@ -34,13 +34,13 @@ void turnOff(LedType_t led)
     switch (led)
        {
        case RED_LED:
-           PTD->PSOR |= 1 << PTD15;
+           PTD->PSOR |= 1 << RED_LED_PIN;
            break;
        case GREEN_LED:
-           PTD->PSOR |= 1 << PTD16;
+           PTD->PSOR |= 1 << GREEN_LED_PIN;
            break;
        case BLUE_LED:
-           PTD->PSOR |= 1 << PTD0;
+           PTD->PSOR |= 1 << BLUE_LED_PIN;
            break;
        default:
            assert(false);

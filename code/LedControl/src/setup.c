@@ -33,7 +33,7 @@ void setup(void)
     setupSwitchButtonInputs();
 
     /* Configure port D0 as GPIO output (LED on EVB) */
-    PTD->PDDR |= 1 << PTD0; /* Port D0: Data Direction= output */
+    PTD->PDDR |= 1 << BLUE_LED_PIN; /* Port D0: Data Direction= output */
     PORTD->PCR[0] = PORT_PCR_MUX(1); /* Port D0: MUX = GPIO */
 }
 
@@ -48,13 +48,13 @@ static void enablePortClock(void)
 
 void setupSwitchButtonInputs(void)
 {
-    /* Setup of switch button SW1 that connects pin PTC13. */
-    PTC->PDDR &= ~(1 << PTC13);              /* Set pin as input. */
-    PORTC->PCR[PTC13] |= PORT_PCR_MUX(1);    /* Set alternative 1 (GPIO). */
-    PORTC->PCR[PTC13] |= PORT_PCR_PFE_MASK;  /* Input filter enabled. */
+    /* Setup of pin for switch button SW1. */
+    PTC->PDDR &= ~(1 << SW1_PIN);              /* Set pin as input. */
+    PORTC->PCR[SW1_PIN] |= PORT_PCR_MUX(1);    /* Set alternative 1 (GPIO). */
+    PORTC->PCR[SW1_PIN] |= PORT_PCR_PFE_MASK;  /* Enable input filter. */
 
-    /* Setup of switch button SW2 that connects pin PTC12. */
-    PTC->PDDR &= ~(1 << PTC12);              /* Set pin as input. */
-    PORTC->PCR[PTC12] |= PORT_PCR_MUX(1);    /* Set alternative 1 (GPIO). */
-    PORTC->PCR[PTC12] |= PORT_PCR_PFE_MASK;  /* Input filter enabled. */
+    /* Setup of pin for switch button SW2. */
+    PTC->PDDR &= ~(1 << SW2_PIN);              /* Set pin as input. */
+    PORTC->PCR[SW2_PIN] |= PORT_PCR_MUX(1);    /* Set alternative 1 (GPIO). */
+    PORTC->PCR[SW2_PIN] |= PORT_PCR_PFE_MASK;  /* Enable input filter. */
 }

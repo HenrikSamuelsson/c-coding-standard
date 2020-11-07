@@ -12,7 +12,7 @@ bool switchIsEnabled(void)
 {
     bool result;
 
-    if (PTC->PDIR & (1 << PTC12))
+    if (PTC->PDIR & (1 << SW2_PIN))
     {
         result = true;
     }

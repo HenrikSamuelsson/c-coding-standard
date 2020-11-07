@@ -9,18 +9,18 @@
 #define BOARD_H_
 
 /** Port D pin 15 used as output to control red LED. */
-#define PTD15    15
+#define RED_LED_PIN    15
 
 /** Port D bit 16 used as output to control green LED. */
-#define PTD16    16
+#define GREEN_LED_PIN    16
 
 /** Port D pin 0 used as output to control blue LED. */
-#define PTD0     0
+#define BLUE_LED_PIN     0
 
 /** Port C pin 12 used as input from push button SW2. */
-#define PTC12    12
+#define SW2_PIN    12
 
 /** Port C pin 13 used as input from push button SW1. */
-#define PTC13    13
+#define SW1_PIN    13
 
 #endif /* BOARD_H_ */
