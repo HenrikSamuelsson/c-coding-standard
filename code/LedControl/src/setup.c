@@ -11,7 +11,7 @@
  *
  * \return     Void.
  */
-static void enablePortClock(void);
+static void enablePortClocks(void);
 
 /**
  * \brief      Configure input pins for switch buttons.
@@ -23,21 +23,27 @@ static void enablePortClock(void);
  *
  * \param      Void.
  *
- * return      Void.
+ * \return     Void.
  */
-void setupSwitchButtonInputs(void);
+static void setupSwitchButtonInputs(void);
+
+/**
+ * \brief      Configure output pins for LED's.
+ *
+ * \param      Void.
+ *
+ * \return     Void.
+ */
+static void setupLedOutputs(void);
 
 void setup(void)
 {
-    enablePortClock();
+    enablePortClocks();
     setupSwitchButtonInputs();
-
-    /* Configure port D0 as GPIO output (LED on EVB) */
-    PTD->PDDR |= 1 << BLUE_LED_PIN; /* Port D0: Data Direction= output */
-    PORTD->PCR[0] = PORT_PCR_MUX(1); /* Port D0: MUX = GPIO */
+    setupLedOutputs();
 }
 
-static void enablePortClock(void)
+static void enablePortClocks(void)
 {
     /* Enable the clock to PORT C. */
     PCC->PCCn[PCC_PORTC_INDEX] = PCC_PCCn_CGC_MASK;
@@ -46,15 +52,22 @@ static void enablePortClock(void)
     PCC->PCCn[PCC_PORTD_INDEX] = PCC_PCCn_CGC_MASK;
 }
 
-void setupSwitchButtonInputs(void)
+static void setupSwitchButtonInputs(void)
 {
     /* Setup of pin for switch button SW1. */
-    PTC->PDDR &= ~(1 << SW1_PIN);              /* Set pin as input. */
-    PORTC->PCR[SW1_PIN] |= PORT_PCR_MUX(1);    /* Set alternative 1 (GPIO). */
+    PTC->PDDR &= ~(1 << SW1_PIN);              /* Pin as input. */
+    PORTC->PCR[SW1_PIN] |= PORT_PCR_MUX(1);    /* Alternative 1, GPIO. */
     PORTC->PCR[SW1_PIN] |= PORT_PCR_PFE_MASK;  /* Enable input filter. */
 
     /* Setup of pin for switch button SW2. */
-    PTC->PDDR &= ~(1 << SW2_PIN);              /* Set pin as input. */
-    PORTC->PCR[SW2_PIN] |= PORT_PCR_MUX(1);    /* Set alternative 1 (GPIO). */
+    PTC->PDDR &= ~(1 << SW2_PIN);              /* Pin as input. */
+    PORTC->PCR[SW2_PIN] |= PORT_PCR_MUX(1);    /* Alternative 1, GPIO. */
     PORTC->PCR[SW2_PIN] |= PORT_PCR_PFE_MASK;  /* Enable input filter. */
+}
+
+static void setupLedOutputs(void)
+{
+    /* Setup pin for the blue LED. */
+    PTD->PDDR |= 1 << BLUE_LED_PIN;              /* Pin as output. */
+    PORTD->PCR[BLUE_LED_PIN] = PORT_PCR_MUX(1);  /* Alternative 1, GPIO. */
 }
