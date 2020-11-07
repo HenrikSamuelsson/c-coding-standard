@@ -67,7 +67,15 @@ static void setupSwitchButtonInputs(void)
 
 static void setupLedOutputs(void)
 {
+    /* Setup pin for the red LED. */
+    PTD->PDDR |= 1 << RED_LED_PIN;               /* Pin as output. */
+    PORTD->PCR[RED_LED_PIN] = PORT_PCR_MUX(1);   /* Alternative 1, GPIO. */
+
+    /* Setup pin for the green LED. */
+    PTD->PDDR |= 1 << GREEN_LED_PIN;              /* Pin as output. */
+    PORTD->PCR[GREEN_LED_PIN] = PORT_PCR_MUX(1);  /* Alternative 1, GPIO. */
+
     /* Setup pin for the blue LED. */
-    PTD->PDDR |= 1 << BLUE_LED_PIN;              /* Pin as output. */
-    PORTD->PCR[BLUE_LED_PIN] = PORT_PCR_MUX(1);  /* Alternative 1, GPIO. */
+    PTD->PDDR |= 1 << BLUE_LED_PIN;               /* Pin as output. */
+    PORTD->PCR[BLUE_LED_PIN] = PORT_PCR_MUX(1);   /* Alternative 1, GPIO. */
 }
