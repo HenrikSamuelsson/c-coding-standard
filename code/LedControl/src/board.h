@@ -15,9 +15,9 @@
 #define PTD16    16
 
 /** Port D, bit 0, output to blue LED. */
-#define PTD0    0
+#define PTD0     0
 
 /** Port C, bit 12, input from push button SW2. */
-#define PTC12   12
+#define PTC12    12
 
 #endif /* BOARD_H_ */

@@ -12,9 +12,9 @@
 /**
  * \brief      Main function that does setup and runs the controller.
  *
- * \details    Main entry point of the program. Will first setup the system, and
- *             from then on invoke the controller task function repeatedly, as
- *             fast as possible.
+ * \details    Main entry point of the program. Will first setup the system,
+ *             and from then on invoke the controller task function
+ *             repeatedly, as fast as possible.
  *
  *             This function is intentionally designed to never return.
  *
