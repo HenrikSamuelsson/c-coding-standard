@@ -11,7 +11,7 @@
 
 void controllerTask(void)
 {
-    if (switchIsEnabled())
+    if (SWITCH_isEnabled(SW2))
     {
         turnOn(BLUE_LED);
     }

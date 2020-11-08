@@ -11,7 +11,7 @@
 #include <assert.h>
 #include <stdbool.h>
 
-void turnOn(LedType_t led)
+void turnOn(LedType led)
 {
     switch (led)
     {
@@ -29,7 +29,7 @@ void turnOn(LedType_t led)
     }
 }
 
-void turnOff(LedType_t led)
+void turnOff(LedType led)
 {
     switch (led)
        {

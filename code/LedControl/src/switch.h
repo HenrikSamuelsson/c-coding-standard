@@ -7,6 +7,16 @@
 
 #include "stdbool.h"
 
-bool switchIsEnabled(void);
+/**
+ * \brief      The named switch buttons on the board.
+ */
+typedef enum
+{
+    SW1,
+    SW2
+} SwitchType;
+
+bool SWITCH_isEnabled(SwitchType switchButton);
 
 #endif /* SWITCH_H_ */
+

@@ -5,13 +5,13 @@
 #ifndef LED_H_
 #define LED_H_
 
-/** \brief     The LED's available on the board. */
+/** \brief     The LED's on the board that can be controlled. */
 typedef enum
 {
     RED_LED,
     GREEN_LED,
     BLUE_LED
-} LedType_t;
+} LedType;
 
 /**
  * \brief      Turns on a chosen LED.
@@ -24,7 +24,7 @@ typedef enum
  *
  * \return     Void.
  */
-void turnOn(LedType_t led);
+void turnOn(LedType led);
 
 /**
  * \brief      Turns off a chosen LED.
@@ -37,6 +37,6 @@ void turnOn(LedType_t led);
  *
  * \return     Void.
  */
-void turnOff(LedType_t led);
+void turnOff(LedType led);
 
 #endif /* LED_H_ */

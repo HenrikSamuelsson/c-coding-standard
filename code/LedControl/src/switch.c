@@ -8,7 +8,7 @@
 
 #include "S32K144.h"
 
-bool switchIsEnabled(void)
+bool SWITCH_isEnabled(Switch_t switchButton)
 {
     bool result;
 
