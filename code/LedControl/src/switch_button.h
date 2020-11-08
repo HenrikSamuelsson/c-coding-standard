@@ -1,5 +1,5 @@
 /**
- * \file switch.h
+ * \file switch_button.h
  */
 
 #ifndef SWITCH_BUTTON_H_

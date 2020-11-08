@@ -1,5 +1,5 @@
 /**
- * \file switch.c
+ * \file switch_button.c
  */
 
 #include "switch_button.h"

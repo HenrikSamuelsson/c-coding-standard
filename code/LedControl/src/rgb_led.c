@@ -1,5 +1,5 @@
 /**
- * \file led.c
+ * \file rgb_led.c
  */
 
 #include "rgb_led.h"
@@ -11,9 +11,9 @@
 #include <assert.h>
 #include <stdbool.h>
 
-void RGBLED_turnOn(RgbLedType led)
+void RGBLED_turnOn(RgbLedType rgbLed)
 {
-    switch (led)
+    switch (rgbLed)
     {
     case RED_LED:
         PTD->PCOR |= 1 << RED_LED_PIN;
@@ -29,9 +29,9 @@ void RGBLED_turnOn(RgbLedType led)
     }
 }
 
-void turnOff(RgbLedType led)
+void turnOff(RgbLedType rbgLed)
 {
-    switch (led)
+    switch (rbgLed)
        {
        case RED_LED:
            PTD->PSOR |= 1 << RED_LED_PIN;

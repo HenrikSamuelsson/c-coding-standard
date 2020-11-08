@@ -1,5 +1,5 @@
 /**
- * \file led.h
+ * \file rgb_led.h
  */
 
 #ifndef RGB_LED_H_
