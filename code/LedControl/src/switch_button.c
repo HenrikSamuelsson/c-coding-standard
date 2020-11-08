@@ -2,13 +2,13 @@
  * \file switch.c
  */
 
-#include "switch.h"
+#include "switch_button.h"
 
 #include "board.h"
 
 #include "S32K144.h"
 
-bool SWITCH_isEnabled(Switch_t switchButton)
+bool SWBTN_isEnabled(SwitchButtonType switchButton)
 {
     bool result;
 

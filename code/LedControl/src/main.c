@@ -10,7 +10,7 @@
 #include <stdlib.h>
 
 /**
- * \brief      Main function that does setup and runs the controller.
+ * \brief      Main function that do setup and runs the controller.
  *
  * \details    Main entry point of the program. Will first setup the system,
  *             and from then on invoke the controller task function

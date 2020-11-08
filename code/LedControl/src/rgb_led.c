@@ -2,7 +2,7 @@
  * \file led.c
  */
 
-#include "led.h"
+#include "rgb_led.h"
 
 #include "board.h"
 
@@ -11,7 +11,7 @@
 #include <assert.h>
 #include <stdbool.h>
 
-void turnOn(LedType led)
+void turnOn(RgbLedType led)
 {
     switch (led)
     {
@@ -29,7 +29,7 @@ void turnOn(LedType led)
     }
 }
 
-void turnOff(LedType led)
+void turnOff(RgbLedType led)
 {
     switch (led)
        {

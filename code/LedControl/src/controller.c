@@ -4,14 +4,14 @@
 #include "controller.h"
 
 #include "board.h"
-#include "led.h"
-#include "switch.h"
-
 #include "S32K144.h"
+
+#include "rgb_led.h"
+#include "switch_button.h"
 
 void controllerTask(void)
 {
-    if (SWITCH_isEnabled(SW2))
+    if (SWBTN_isEnabled(SW2))
     {
         turnOn(BLUE_LED);
     }
