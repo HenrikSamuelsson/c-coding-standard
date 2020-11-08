@@ -38,6 +38,7 @@ bool SWBTN_isEnabled(SwitchButtonType switchButton)
         break;
     default:
         assert(false); /* Unknown switch button, should never happen. */
+        break;
     }
 
     return result;

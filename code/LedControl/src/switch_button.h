@@ -16,6 +16,16 @@ typedef enum
     SW2
 } SwitchButtonType;
 
+/**
+ * \brief      Returns the state of a given switch button on the board.
+ *
+ * \details    A user can enable a button be pressing it down this will
+ *             cause this function to return true.
+ *
+ * \param[in]  Identifier for what switch button to be checked.
+ *
+ * \return     True if the switch button is enabled. otherwise false.
+ */
 bool SWBTN_isEnabled(SwitchButtonType switchButton);
 
 #endif /* SWITCH_BUTTON_H_ */

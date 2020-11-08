@@ -26,23 +26,25 @@ void RGBLED_turnOn(RgbLedType rgbLed)
         break;
     default:
         assert(false); /* Unknown RGB LED, should never happen. */
+        break;
     }
 }
 
 void turnOff(RgbLedType rbgLed)
 {
     switch (rbgLed)
-       {
-       case RED_LED:
-           PTD->PSOR |= 1 << RED_LED_PIN;
-           break;
-       case GREEN_LED:
-           PTD->PSOR |= 1 << GREEN_LED_PIN;
-           break;
-       case BLUE_LED:
-           PTD->PSOR |= 1 << BLUE_LED_PIN;
-           break;
-       default:
-           assert(false); /* Unknown RGB LED, should never happen. */
-       }
+    {
+    case RED_LED:
+        PTD->PSOR |= 1 << RED_LED_PIN;
+        break;
+    case GREEN_LED:
+        PTD->PSOR |= 1 << GREEN_LED_PIN;
+        break;
+    case BLUE_LED:
+        PTD->PSOR |= 1 << BLUE_LED_PIN;
+        break;
+    default:
+        assert(false); /* Unknown RGB LED, should never happen. */
+        break;
+    }
 }
