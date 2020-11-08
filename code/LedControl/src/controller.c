@@ -13,7 +13,7 @@ void controllerTask(void)
 {
     if (SWBTN_isEnabled(SW2))
     {
-        turnOn(BLUE_LED);
+        RGBLED_turnOn(BLUE_LED);
     }
     else
     {

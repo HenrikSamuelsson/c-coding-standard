@@ -24,7 +24,7 @@ typedef enum
  *
  * \return     Void.
  */
-void turnOn(RgbLedType led);
+void RGBLED_turnOn(RgbLedType led);
 
 /**
  * \brief      Turns off a chosen RBG LED.
@@ -37,6 +37,6 @@ void turnOn(RgbLedType led);
  *
  * \return     Void.
  */
-void turnOff(RgbLedType led);
+void RBGLED_turnOff(RgbLedType led);
 
 #endif /* RGB_LED_H_ */

@@ -11,7 +11,7 @@
 #include <assert.h>
 #include <stdbool.h>
 
-void turnOn(RgbLedType led)
+void RGBLED_turnOn(RgbLedType led)
 {
     switch (led)
     {
