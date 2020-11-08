@@ -25,7 +25,7 @@ void RGBLED_turnOn(RgbLedType rgbLed)
         PTD->PCOR |= 1 << BLUE_LED_PIN;
         break;
     default:
-        assert(false);
+        assert(false); /* Unknown RGB LED, should never happen. */
     }
 }
 
@@ -43,6 +43,6 @@ void turnOff(RgbLedType rbgLed)
            PTD->PSOR |= 1 << BLUE_LED_PIN;
            break;
        default:
-           assert(false);
+           assert(false); /* Unknown RGB LED, should never happen. */
        }
 }
