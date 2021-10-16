@@ -12,10 +12,9 @@ The value of an automatic variable that is not initialized is undefined. Explici
         xleftmargin = 3.4pt,
 		title = {Non-Compliant}
 	]
-int f(void)
+int foo(void)
 {
 	uint32_t i;
-	i++;
 	return i;
 }
 \end{lstlisting}
@@ -26,7 +25,6 @@ int f(void)
 int foo(void)
 {
 	uint32_t i = 0;
-	i++;
 	return i;
 }
 \end{lstlisting}
