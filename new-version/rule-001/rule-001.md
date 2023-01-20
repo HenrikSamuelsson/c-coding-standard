@@ -28,4 +28,4 @@ The value of an automatic variable is undefined until it have been initialized a
 
 ## Note
 
-Automatic variables can be initialized at the time of declaration or at a later time, the key is to ensure that initialization is always done before use.
+Automatic variables can be initialized at the time of declaration or at a later time if ensuring that initialization is always done before use.
