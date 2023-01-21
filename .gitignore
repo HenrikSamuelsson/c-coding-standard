@@ -63,8 +63,9 @@ resources
 *.synctex.gz
 __latexindent_temp.tex
 
-# Visual Stodio Code
+# Visual Studio Code
 .metadata
+.vscode/
 
 # Eclipse
 .cproject
