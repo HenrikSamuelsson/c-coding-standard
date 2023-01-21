@@ -1,6 +1,6 @@
 # Rule 1
 
-> Automatic variables shall be initialized before use.
+Automatic variables shall be initialized before use.
 
 ## Non-compliant
 
