@@ -1,4 +1,4 @@
-# Rule 4 - Enum Initialization Strategy
+# Rule 4 - `enum` Initialization Strategy
 
 Initialization of `enum` type shall according to one of the following strategies:
 
