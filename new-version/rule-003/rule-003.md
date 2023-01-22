@@ -1,6 +1,6 @@
 # Rule 3
 
-The size of a char array initialized by a string shall match the size of the string, including the string terminating null character.
+The size of a char array initialized by a string shall match the size of the string including the string terminating null character.
 
 ## Non-compliant
 
