@@ -1,4 +1,4 @@
-# Rule 2
+# Rule 2 - `const` Variable Initialization
 
 `const` variables shall be initialized at the time of declaration.
 
