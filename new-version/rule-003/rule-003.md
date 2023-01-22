@@ -1,4 +1,4 @@
-# Rule 3 - Memory for Null Terminator in `char` Array
+# Rule 3 - `char` Array String Initialization
 
 The size of a char array initialized by a string shall match the size of the string including the string terminating null character.
 
