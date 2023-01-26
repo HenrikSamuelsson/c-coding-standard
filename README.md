@@ -8,3 +8,7 @@ A set of rules for coding in the C Programming language.
 [`const` Variable Initialization](/new-version/rule-002/rule-002.md)  
 [`char` Array String Initialization](/new-version/rule-003/rule-003.md)  
 [`enum` Initialization Strategy](/new-version/rule-004/rule-004.md)  
+
+## Pointers
+
+[Pointer Arithmetic](/new-version/rule-005/rule-005.md)  
