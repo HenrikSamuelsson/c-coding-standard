@@ -29,4 +29,11 @@ for (; (p < buffer + N) && (*p != '\0'); p++ )
 
 ## Rationale
 
-Pointer arithmetic operations are part of the C programming language but are dangerous and a common source of bugs since it is easy to make a mistake.
+Pointer arithmetic operations are part of the C programming language but are dangerous and a common source of bugs. Care need to be taken to keep the pointer within the allowed memory range, i.e. within the array currently being worked on, to prevent manipulation of other data than intended by use of the pointer.
+
+## Note
+
+It is permissible to point to the area directly after the last element of an array as long
+as the array element is not accessed. In other words, in the case where int `buffer[N]` and  `p = data`, `p + N`
+complies with the rule as long as it is not used for accessing the array elements. Whereas using a construct such as
+`*(p + N)` that accesses memory outside of the array is non-compliant.
