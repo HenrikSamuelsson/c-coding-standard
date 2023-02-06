@@ -15,5 +15,8 @@
         "-q",
         "-n1"
     ],
-    "latex-workshop.chktex.enabled": true
+    "latex-workshop.chktex.enabled": true,
+    "cSpell.words": [
+        "ptrdiff_t"
+    ]
 }
