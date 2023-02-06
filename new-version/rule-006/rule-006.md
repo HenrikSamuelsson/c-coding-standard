@@ -1,6 +1,6 @@
-# Rule 6 - Subtraction Between Pointers
+# Rule 6 - Pointer Subtraction
 
-Subtraction between pointers shall only be with pointers that address elements within an single array.
+Subtraction between pointers shall only be with pointers that address elements within one single array.
 
 ## Non-compliant
 
