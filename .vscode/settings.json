@@ -17,6 +17,7 @@
     ],
     "latex-workshop.chktex.enabled": true,
     "cSpell.words": [
-        "ptrdiff_t"
+        "ptrdiff_t",
+        "stddef.h"
     ]
 }
