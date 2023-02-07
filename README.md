@@ -13,3 +13,4 @@ A set of rules for coding in the C Programming language.
 
 [Pointer Arithmetic](/new-version/rule-005/rule-005.md)  
 [Pointer Subtraction](/new-version/rule-006/rule-006.md)  
+[Pointer Comparison](/new-version/rule-007/rule-007.md)  
