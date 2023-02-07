@@ -35,7 +35,7 @@ diff = p2 - p1;
 
 ## Rationale
 
-In C language, subtraction between pointers expresses how many elements exist between the two elements pointed by each pointer, if each pointer points to a different array, the way the variables are laid out between them is implementation-dependent and the execution result is not guaranteed. This implies that subtraction between pointers is meaningful only when both pointers are pointing to elements in the same array. Therefore, before subtracting one pointer from another pointer, the programmer must ensure that both pointers are addressing elements of the same array
+In C language, subtraction between pointers expresses how many elements exist between the two elements pointed by each pointer, if each pointer points to a different array, the way the variables are laid out between them is implementation-dependent and the execution result is not guaranteed. This implies that subtraction between pointers is meaningful only when both pointers are pointing to elements in the same array. Therefore, before subtracting one pointer from another pointer, the programmer must ensure that both pointers are addressing elements of the same array.
 
 ## Note
 
