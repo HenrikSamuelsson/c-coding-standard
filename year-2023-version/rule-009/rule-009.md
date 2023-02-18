@@ -1,6 +1,6 @@
 # Rule 9 - Floating-point Number Comparison
 
-Lack in precision of floating point number shall be taken into account when combined with relational operators.
+Lack in precision of floating point numbers shall be taken into account when combined with relational operators.
 
 ## Non-compliant
 
