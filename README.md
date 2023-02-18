@@ -14,3 +14,7 @@ A set of rules for coding in the C Programming language.
 [Pointer Arithmetic](/year-2023-version/rule-005/rule-005.md)  
 [Pointer Subtraction](/year-2023-version/rule-006/rule-006.md)  
 [Pointer Comparison](/year-2023-version/rule-007/rule-007.md)  
+
+## Prohibited Constructs
+
+[Restrict Type Qualifier](year-2023-version/rule-008/rule-008.md)
