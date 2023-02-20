@@ -1,4 +1,4 @@
-# Rule 9 - Floating-point Number Comparison
+# Rule 9 - Careful Floating-point Number Comparison
 
 Lack in precision of floating point numbers shall be taken into account when combined with relational operators.
 

@@ -1,26 +1,29 @@
-# Rule 2 - `const` Variable Initialization
+# Rule 10 - Avoid Floating-point Number Counters
 
-`const` variables shall be initialized at the time of declaration.
+Floating-point numbers shall not be used as loop counter.
 
 ## Non-compliant
 
 ```c
-const int N;
+for (double d = 0.0; d < 1.0; d += 0.1)
+{
+    // ...
+}
 ```
 
 ## Compliant
 
 ```c
-const int N = 10;
+for (int i = 0; i < 10; i++)
+{
+    // ...
+}
 ```
 
 ## Rationale
 
-A const variable shall be initialized at the time of declaration due to that it cannot be assigned to subsequently.
-
-## Note
-
-Missing initialization at declaration does not cause a compile error.
+If operations are repeatedly performed to a floating-point variable, the
+intended result may not be achieved due to accumulated calculation errors. Therefore, integer type should be used for loop counters.
 
 ## References
 
