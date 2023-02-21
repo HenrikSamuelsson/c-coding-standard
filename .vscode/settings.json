@@ -17,8 +17,10 @@
     ],
     "latex-workshop.chktex.enabled": true,
     "cSpell.words": [
+        "memcmp",
         "ptrdiff_t",
         "stddef",
-        "stddef.h"
+        "stddef.h",
+        "struct"
     ]
 }
