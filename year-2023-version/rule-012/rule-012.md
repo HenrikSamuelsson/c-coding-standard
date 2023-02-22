@@ -1,6 +1,6 @@
 # Boolean Comparison
 
-Boolean comparison expressions shall use false as the comparand, and not true.
+Boolean comparison expressions shall use false as the comparand, as opposed to true.
 
 ## Non-compliant
 
