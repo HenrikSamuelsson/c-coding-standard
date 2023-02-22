@@ -20,6 +20,10 @@ A set of rules for coding in the C Programming language.
 [Careful Floating-point Number Comparison](year-2023-version/rule-009/rule-009.md)  
 [Avoid Floating-point Number Counters](year-2023-version/rule-010/rule-010.md)  
 
+## Boolean
+
+[Boolean Comparison](year-2023-version/rule-012/rule-012.md)  
+
 ## Constructs to Avoid
 
 [Restrict Type Qualifier](year-2023-version/rule-008/rule-008.md)
