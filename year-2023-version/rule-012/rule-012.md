@@ -1,4 +1,4 @@
-# Structure and Union Comparison
+# Boolean Comparison
 
 Boolean comparison expressions shall use false as the comparand, and not true.
 
@@ -26,7 +26,7 @@ if (f() != FALSE)
 
 ## Rationale
 
-In the C programming language, true is represented by any non-]ero value, not necessarily 1. False is on the other hand always represented by a zero and is safe to compare against.
+In the C programming language, true is represented by any non-ero value, not necessarily 1. False is on the other hand always represented by 0 and is safe to compare against.
 
 ## Note
 
