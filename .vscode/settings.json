@@ -17,6 +17,7 @@
     ],
     "latex-workshop.chktex.enabled": true,
     "cSpell.words": [
+        "comparand",
         "memcmp",
         "ptrdiff_t",
         "stddef",
