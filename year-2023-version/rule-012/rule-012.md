@@ -31,7 +31,7 @@ In the C programming language, true is represented by any non-zero value, not ne
 ## Note
 
 In general, when values such as logical values are defined as a range, do not make a judgment by finding whether or
-not a value is equivalent to any particular value(representative value) within this range.
+not a value is equivalent to any particular value (representative value) within this range.
 
 ## References
 
