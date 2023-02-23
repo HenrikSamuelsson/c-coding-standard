@@ -18,6 +18,8 @@
     "latex-workshop.chktex.enabled": true,
     "cSpell.words": [
         "comparand",
+        "FFFFU",
+        "FFFFUL",
         "memcmp",
         "ptrdiff_t",
         "stddef",
