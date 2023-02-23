@@ -15,6 +15,10 @@ A set of rules for coding in the C Programming language.
 [Pointer Subtraction](year-2023-version/rule-006/rule-006.md)  
 [Pointer Comparison](year-2023-version/rule-007/rule-007.md)  
 
+## Integer Numbers
+
+[Integer Constant Comparison](year-2023-version/rule-012/rule-012.md)
+
 ## Floating-point Numbers
 
 [Careful Floating-point Number Comparison](year-2023-version/rule-009/rule-009.md)  
@@ -28,6 +32,6 @@ A set of rules for coding in the C Programming language.
 
 [Restrict Type Qualifier](year-2023-version/rule-008/rule-008.md)
 
-## Memory Related Operations
+## Memory Operations
 
 [Structure and Union Comparison](year-2023-version/rule-011/rule-011.md)  
