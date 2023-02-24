@@ -1,4 +1,4 @@
-# Boolean Comparison
+# Rule 12 - Boolean Comparison
 
 Boolean comparison expressions shall use false as the comparand, as opposed to true.
 

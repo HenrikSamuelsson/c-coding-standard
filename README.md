@@ -15,10 +15,6 @@ A set of rules for coding in the C Programming language.
 [Pointer Subtraction](year-2023-version/rule-006/rule-006.md)  
 [Pointer Comparison](year-2023-version/rule-007/rule-007.md)  
 
-## Integer Numbers
-
-[Integer Constant Comparison](year-2023-version/rule-012/rule-012.md)
-
 ## Floating-point Numbers
 
 [Careful Floating-point Number Comparison](year-2023-version/rule-009/rule-009.md)  
@@ -28,9 +24,15 @@ A set of rules for coding in the C Programming language.
 
 [Boolean Comparison](year-2023-version/rule-012/rule-012.md)  
 
+## Do Not Mix Types
+
+[Integer Constant Types](year-2023-version/rule-012/rule-012.md)  
+[Conditional Expression Return Type](year-2023-version/rule-014/rule-014.md)  
+
+
 ## Constructs to Avoid
 
-[Restrict Type Qualifier](year-2023-version/rule-008/rule-008.md)
+[Restrict Type Qualifier](year-2023-version/rule-008/rule-008.md)  
 
 ## Memory Operations
 
