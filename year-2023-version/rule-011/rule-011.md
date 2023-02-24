@@ -1,4 +1,4 @@
-# Structure and Union Comparison
+# Rule 11 - Structure and Union Comparison
 
 `memcmp` shall not be used to compare structures and unions.
 

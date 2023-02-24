@@ -1,4 +1,4 @@
-# Integer Constant Comparison
+# Rule 13 - Integer Constant Comparison
 
 Unsigned integer constant expressions shall use suffix to be described within the range that can be represented with the result type.
 

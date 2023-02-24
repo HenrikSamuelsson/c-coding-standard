@@ -1,4 +1,4 @@
-# Rule 6 - Pointer Comparison
+# Rule 7 - Pointer Comparison
 
 Comparison between pointers shall only be used when the pointers points at elements in the same array or members in the same structure.
 
