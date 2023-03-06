@@ -30,7 +30,6 @@ A set of rules for coding in the C Programming language.
 [Conditional Expression Return Type](year-2023-version/rule-014/rule-014.md)  
 [Loop Control Types](year-2023-version/rule-015/rule-015.md)
 
-
 ## Constructs to Avoid
 
 [Restrict Type Qualifier](year-2023-version/rule-008/rule-008.md)  
