@@ -28,6 +28,7 @@ A set of rules for coding in the C Programming language.
 
 [Integer Constant Types](year-2023-version/rule-012/rule-012.md)  
 [Conditional Expression Return Type](year-2023-version/rule-014/rule-014.md)  
+[Loop Control Types](year-2023-version/rule-015/rule-015.md)
 
 
 ## Constructs to Avoid
