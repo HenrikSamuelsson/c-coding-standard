@@ -1,6 +1,6 @@
 # Rule 4 - `enum` Initialization Strategy
 
-Initialization of `enum` type shall according to one of the following strategies:
+Initialization of `enum` type shall be according to one of the following strategies:
 
 - Not specifying any member
 - Specifying only the first member
